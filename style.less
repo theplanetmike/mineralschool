@@ -1,0 +1,44 @@
+//LESS document
+
+// functions
+.columns(@columns, @paddingRight:2) {
+  // last number can be changed depending on the size of your grid, if you are using one. Second number in equation is to account for gutters
+  width: percentage((-20 + ((60 * @columns) + (20 * @columns))) / 940);
+  // used padding-right instead of margin-right to utilize box-border
+  padding-right: percentage(@paddingRight / 100);
+}
+
+/*
+Theme Name: Mineral School
+Theme URI: http://www.staging.designbydoug.com/themes/mineralschool
+Author: Seattle Central College ITC 210 project team
+Author URI: http://staging.designbydoug.com
+Description: Wordpress theme for Mineral School, designed and developed by the ITC 210 project team at Seattle Central College
+License: 
+License URI: 
+*/
+
+/***** resets *****/
+
+body, body * {
+  padding: 0;
+  margin: 0;
+}
+
+a img {
+  border: 0;
+}
+
+/****** body styles *****/
+
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/****** header styles *****/
+
+/***** nav styles *****/
+
+/***** global typography styles ******/
