@@ -23,5 +23,46 @@ body {
   line-height: 1.5em;
 }
 /****** header styles *****/
+header.header-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 /***** nav styles *****/
+div.nav-wrap {
+  overflow: hidden;
+}
+nav.main-nav {
+  max-width: 1180px;
+  margin: 0 auto;
+  clear: both;
+}
+nav.main-nav ul li {
+  list-style-type: none;
+}
+/******** div.main styles **********/
+div.main {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+/**************** footer styles **********/
+footer {
+  max-width: 1180px;
+  margin: 0 auto;
+  clear: both;
+}
 /***** global typography styles ******/
+/***** media queries *****/
+/*** tablet and up *****/
+@media all and (min-width: 39em) {
+  nav.main-nav ul {
+    clear: both;
+  }
+  nav.main-nav ul li {
+    float: left;
+    list-style-type: none;
+  }
+  nav.main-nav ul li a {
+    padding-right: 10px;
+  }
+}

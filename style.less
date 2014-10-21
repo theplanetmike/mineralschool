@@ -3,7 +3,7 @@
 // functions
 .columns(@columns, @paddingRight:2) {
   // last number can be changed depending on the size of your grid, if you are using one. Second number in equation is to account for gutters
-  width: percentage((-20 + ((60 * @columns) + (20 * @columns))) / 940);
+  width: percentage((-20 + ((60 * @columns) + (20 * @columns))) / 1180);
   // used padding-right instead of margin-right to utilize box-border
   padding-right: percentage(@paddingRight / 100);
 }
@@ -39,6 +39,65 @@ body {
 
 /****** header styles *****/
 
+header.header-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 /***** nav styles *****/
 
+div.nav-wrap {
+  overflow: hidden;
+}
+nav.main-nav {
+  max-width: 1180px;
+  margin: 0 auto;
+  clear: both;
+  ul {
+    li {
+      list-style-type: none;
+      a {
+        &:link, &:visited {
+          
+        }
+      }
+    }
+  }
+}
+
+/******** div.main styles **********/
+
+div.main {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/**************** footer styles **********/
+
+footer {
+  max-width: 1180px;
+  margin: 0 auto;
+  clear: both;
+}
+
 /***** global typography styles ******/
+
+
+/***** media queries *****/
+
+/*** tablet and up *****/
+@media all and (min-width: 39em) {
+  nav.main-nav {
+    ul {
+      clear: both;
+      li {
+        float: left;
+        list-style-type: none;
+        a {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

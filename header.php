@@ -10,8 +10,15 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header>
-    </header>
-    <nav>
-    test
-    </nav>
+    <div class="header-wrap">
+      <header class="header-main">
+        <h1><?php bloginfo('name'); ?></h1>
+        <h2><?php bloginfo('description'); ?></h2>
+      </header>
+    </div>
+    <div class="nav-wrap">
+      <nav class="main-nav">
+<?php wp_nav_menu( array( 'menu' => 'Main Header Menu')); ?> 
+      </nav>
+    </div>
+    
