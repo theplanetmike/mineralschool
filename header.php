@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+    <title><?php bloginfo('name'); wp_title('|', true, 'left'); if (is_front_page()): ?> | <?php bloginfo('description'); endif; ?></title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -12,13 +12,13 @@
   <body>
     <div class="header-wrap">
       <header class="header-main">
-        <h1><?php bloginfo('name'); ?></h1>
+        <h1><a href=""><?php bloginfo('name'); ?></a></h1>
         <h2><?php bloginfo('description'); ?></h2>
       </header>
-    </div>
+    </div><!-- end header.header-main -->
     <div class="nav-wrap">
       <nav class="main-nav">
 <?php wp_nav_menu( array( 'menu' => 'Main Header Menu')); ?> 
       </nav>
-    </div>
+    </div><!-- end nav.main-nav -->
     
