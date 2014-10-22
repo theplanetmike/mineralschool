@@ -1,12 +1,8 @@
 //LESS document
 
-// functions
-.columns(@columns, @paddingRight:2) {
-  // last number can be changed depending on the size of your grid, if you are using one. Second number in equation is to account for gutters
-  width: percentage((-20 + ((60 * @columns) + (20 * @columns))) / 1180);
-  // used padding-right instead of margin-right to utilize box-border
-  padding-right: percentage(@paddingRight / 100);
-}
+// includes
+@import "functions"
+        "values"
 
 /*
 Theme Name: Mineral School
@@ -64,6 +60,18 @@ nav.main-nav {
       }
     }
   }
+  @media @tablet {
+    ul {
+      clear: both;
+      li {
+        float: left;
+        list-style-type: none;
+        a {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
 }
 
 /******** div.main styles **********/
@@ -82,22 +90,125 @@ footer {
 }
 
 /***** global typography styles ******/
+h1,h2,h3,h4,h5,h6 {
+  font-weight:normal;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+  margin-top: .5em;
+}
+
+ul {
+  text-align:left;
+  margin: .7em 0 1em 1.5em;
+}
+
+ol {
+  text-align:left;
+  margin: .7em 0 1em 1.75em;
+}
+
+li{
+  margin: .7em 0 0 1.5em;
+}
+
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+p.em {
+  font-weight:bold;
+
+}
+
+a:link {
+  text-decoration: underline;
+}
+a:visited {
+}
+a:hover, a:focus {
+}
+
+img {
+}
 
 
-/***** media queries *****/
 
-/*** tablet and up *****/
-@media all and (min-width: 39em) {
-  nav.main-nav {
-    ul {
-      clear: both;
-      li {
-        float: left;
-        list-style-type: none;
-        a {
-          padding-right: 10px;
-        }
-      }
-    }
-  }
+/***** global form styles ******/
+
+form {
+}
+
+form label, form input {
+}
+
+input.shortfield {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;  */
+  padding: 8px 12px;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ie-border-radius: 3px;
+  width: 25%;
+  min-width: 240px;
+  max-width: 340px;
+}
+
+textarea.longfield {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;  */
+  padding: 8px 12px;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ie-border-radius: 3px;
+  width: 50%;
+  min-width: 240px;
+  max-width: 640px;
+}
+
+/*input[type=submit] {       old way of doing this */
+input.submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;  */
+  padding: .75em 1em;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ie-border-radius: 3px;
 }
