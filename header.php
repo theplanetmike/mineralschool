@@ -12,7 +12,7 @@
   <body>
     <div class="header-wrap">
       <header class="header-main">
-        <h1><a href=""><?php bloginfo('name'); ?></a></h1>
+        <h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('name'); ?></a></h1>
         <h2><?php bloginfo('description'); ?></h2>
       </header>
     </div><!-- end header.header-main -->
