@@ -50,3 +50,9 @@ function my_register_sidebars() {
 		)
 	);
 }
+
+//adding filter to modify trailing elipses at end of the_excerpt() tag
+function changed_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'changed_excerpt_more');

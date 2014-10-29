@@ -2,7 +2,8 @@
 
 <div class="main">
   <section class="main-content">
-    <?php 
+    <h1 class="blog-title"><?php wp_title(false); ?></h1>
+<?php
 if ( have_posts() ) :
 	while ( have_posts() ) :
       the_post();
@@ -11,6 +12,7 @@ if ( have_posts() ) :
 endif;
 ?>
   </section>
+  <?php get_sidebar( 'primary' ); ?>
 </div>
 
 <?php get_footer(); ?>

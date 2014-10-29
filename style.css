@@ -20,7 +20,7 @@ a img {
 body {
   font-family: sans-serif;
   font-size: 100%;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 /****** header styles *****/
 header.header-main {
@@ -40,20 +40,6 @@ nav.main-nav {
 nav.main-nav ul li {
   list-style-type: none;
 }
-/******** div.main styles **********/
-div.main {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-/**************** footer styles **********/
-footer {
-  max-width: 1180px;
-  margin: 0 auto;
-  clear: both;
-}
-/***** global typography styles ******/
-/***** media queries *****/
-/*** tablet and up *****/
 @media all and (min-width: 39em) {
   nav.main-nav ul {
     clear: both;
@@ -65,4 +51,122 @@ footer {
   nav.main-nav ul li a {
     padding-right: 10px;
   }
+}
+/******** .main styles **********/
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/******* blog title styles ******/
+h1.blog-title {
+  padding: 5px 0 5px 20px;
+  background: grey;
+  font-size: 2.2em;
+}
+/****** post styles ********/
+@media all and (min-width: 39em) {
+  .main-content {
+    float: left;
+    width: 52.54237288%;
+    padding-right: 0%;
+  }
+}
+@media all and (min-width: 39em) {
+  .main-content .post-container {
+    padding: 0 40px 0 20px;
+  }
+}
+/**************** footer styles **********/
+footer {
+  max-width: 1180px;
+  margin: 0 auto;
+  clear: both;
+}
+/***** global typography styles ******/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+p {
+  margin-top: .5em;
+}
+ul {
+  text-align: left;
+  margin: .7em 0 1em 1.5em;
+}
+ol {
+  text-align: left;
+  margin: .7em 0 1em 1.75em;
+}
+li {
+  margin: .7em 0 0 1.5em;
+}
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+p.em {
+  font-weight: bold;
+}
+a:link {
+  text-decoration: underline;
+}
+/***** global form styles ******/
+input.shortfield {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;  */
+  padding: 8px 12px;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ie-border-radius: 3px;
+  width: 25%;
+  min-width: 240px;
+  max-width: 340px;
+}
+textarea.longfield {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;  */
+  padding: 8px 12px;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ie-border-radius: 3px;
+  width: 50%;
+  min-width: 240px;
+  max-width: 640px;
+}
+/*input[type=submit] {       old way of doing this */
+input.submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;  */
+  padding: .75em 1em;
+  border: 0 none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ie-border-radius: 3px;
 }
