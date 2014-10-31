@@ -14,6 +14,7 @@
       <header class="header-main">
         <h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('name'); ?></a></h1>
         <h2><?php bloginfo('description'); ?></h2>
+        <?php get_sidebar( 'header' ); ?>
       </header>
     </div><!-- end header.header-main -->
     <div class="nav-wrap">
