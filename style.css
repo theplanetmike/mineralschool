@@ -25,12 +25,16 @@ body {
 /****** header styles *****/
 header.header-main {
   max-width: 1180px;
+  padding: 0 10px;
   margin: 0 auto;
+  background: #b3b3b3;
 }
 /***** nav styles *****/
 nav.main-nav {
+  background: #cccccc;
   max-width: 1180px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 nav.main-nav ul li {
   list-style-type: none;
@@ -85,6 +89,7 @@ div.menu-main-menu-container ul li:hover ul {
 }
 /******** .main styles **********/
 .main {
+  padding-top: 20px;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
@@ -99,13 +104,45 @@ h1.blog-title {
 @media all and (min-width: 39em) {
   .main-content {
     float: left;
-    width: 52.54237288%;
+    width: 57.62711864%;
     padding-right: 0%;
   }
 }
+.main-content .post-container {
+  border-bottom: 3px dotted grey;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
 @media all and (min-width: 39em) {
   .main-content .post-container {
-    padding: 0 40px 0 20px;
+    padding-left: 20px;
+    margin-right: 40px;
+  }
+}
+.main-content .post-container p.read-more {
+  float: right;
+  margin-bottom: 10px;
+}
+/***** page-specific post styles *****/
+.page-container {
+  overflow: hidden;
+}
+@media all and (min-width: 39em) {
+  .page-container {
+    padding-left: 20px;
+  }
+}
+/******* aside#primary styles ********/
+aside#primary h3 {
+  padding: 10px 0 10px 10px;
+  background: grey;
+}
+@media all and (min-width: 39em) {
+  aside#primary {
+    float: right;
+    width: 32.20338983%;
+    padding-right: 0%;
+    margin-right: 10px;
   }
 }
 /**************** footer styles **********/
@@ -113,6 +150,14 @@ footer {
   max-width: 1180px;
   margin: 0 auto;
   clear: both;
+  padding: 0 10px;
+  background: #b3b3b3;
+}
+/** footer nav menu styles **/
+footer div.menu-main-menu-container ul li:hover ul {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 /***** global typography styles ******/
 h1,

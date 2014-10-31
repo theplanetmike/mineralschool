@@ -37,7 +37,9 @@ body {
 
 header.header-main {
   max-width: 1180px;
+  padding: 0 10px;
   margin: 0 auto;
+  background: tint(grey, 40%);
 }
 
 /***** nav styles *****/
@@ -45,8 +47,10 @@ header.header-main {
 div.nav-wrap {
 }
 nav.main-nav {
+  background: tint(grey, 60%);
   max-width: 1180px;
   margin: 0 auto;
+  padding: 0 10px;
   ul {
     li {
       list-style-type: none;
@@ -113,6 +117,7 @@ div.menu-main-menu-container ul li:hover ul {
 /******** .main styles **********/
 
 .main {
+  padding-top: 20px;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
@@ -131,12 +136,43 @@ h1.blog-title {
 .main-content {
   @media @tablet {
     float: left;
-    .columns(8, 0);
+    .columns(7, 0);
   }
   .post-container {
+    border-bottom: 3px dotted grey;
+    margin-bottom: 10px;
+    overflow: hidden;
     @media @tablet {
-      padding: 0 40px 0 20px;
+      padding-left: 20px;
+      margin-right: 40px;
     }
+    p.read-more {
+      float: right;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/***** page-specific post styles *****/
+
+.page-container {
+    overflow: hidden;
+    @media @tablet {
+      padding-left: 20px;
+    }
+  }
+
+/******* aside#primary styles ********/
+
+aside#primary {
+  h3 {
+    padding: 10px 0 10px 10px;
+    background: grey;
+  }
+  @media @tablet {
+    float: right;
+    .columns(4, 0);
+    margin-right: 10px;
   }
 }
 
@@ -146,7 +182,18 @@ footer {
   max-width: 1180px;
   margin: 0 auto;
   clear: both;
+  padding: 0 10px;
+  background: tint(grey, 40%);
 }
+
+  /** footer nav menu styles **/
+  footer div.menu-main-menu-container {
+    ul li:hover ul {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
 
 /***** global typography styles ******/
 h1,h2,h3,h4,h5,h6 {
