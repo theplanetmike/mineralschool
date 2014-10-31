@@ -1,5 +1,5 @@
-<!-- index.php template -->
 <?php get_header(); ?>
+<!-- index.php template -->
 
 <div class="main">
   <section class="main-content">
@@ -8,7 +8,11 @@
 	if ( have_posts() ) :
 		while ( have_posts() ) :
 	      the_post();
-	      get_template_part('content', get_post_format());
+	  	  //this doesn't work because get_post_format() comes up empty
+	      //get_template_part('content', get_post_format());
+	      
+	  	  //this does work but we have no content-post, but do we want one
+	      //get_template_part('content', get_post_type());
 		endwhile;
 	endif;
 	?>

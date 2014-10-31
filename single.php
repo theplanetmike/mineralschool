@@ -1,5 +1,5 @@
-<!-- single.php template -->
 <?php get_header(); ?>
+<!-- single.php template -->
 
 <div class="main">
   <section class="main-content">
