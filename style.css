@@ -28,9 +28,6 @@ header.header-main {
   margin: 0 auto;
 }
 /***** nav styles *****/
-div.nav-wrap {
-  overflow: hidden;
-}
 nav.main-nav {
   max-width: 1180px;
   margin: 0 auto;
