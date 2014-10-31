@@ -1,5 +1,5 @@
 <div class="comments">
-  
+  <!-- comments.php template -->
   <?php if (have_comments() ) : ?>
   <div class="single-comment">
   <?php wp_list_comments( array( "style" => "div",) ); ?>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <?php wp_head(); ?>
   </head>
   <body>
@@ -19,7 +19,7 @@
     </div><!-- end header.header-main -->
     <div class="nav-wrap">
       <nav class="main-nav">
-<?php wp_nav_menu( array( 'menu' => 'Main Header Menu')); ?> 
+        <?php wp_nav_menu( array( 'menu' => 'Main Header Menu')); ?> 
       </nav>
     </div><!-- end nav.main-nav -->
     
