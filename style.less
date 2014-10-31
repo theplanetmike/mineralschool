@@ -117,8 +117,8 @@ div.menu-main-menu-container ul li:hover ul {
 /******** .main styles **********/
 
 .main {
-  padding-top: 20px;
-  max-width: 1200px;
+  padding: 20px 10px 0 10px;
+  max-width: 1180px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -134,17 +134,18 @@ h1.blog-title {
 /****** post styles ********/
 
 .main-content {
+  overflow: hidden;
   @media @tablet {
     float: left;
-    .columns(7, 0);
+    .columns(8, 0);
   }
   .post-container {
     border-bottom: 3px dotted grey;
     margin-bottom: 10px;
     overflow: hidden;
     @media @tablet {
-      padding-left: 20px;
       margin-right: 40px;
+      padding-left: 30px;
     }
     p.read-more {
       float: right;
@@ -159,6 +160,9 @@ h1.blog-title {
     overflow: hidden;
     @media @tablet {
       padding-left: 20px;
+      p {
+        padding: 0 10px;
+      }
     }
   }
 
