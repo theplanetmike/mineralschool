@@ -1,4 +1,5 @@
 <div class="post-container">
+  <!-- content-image.php template -->
   <?php if (is_single() || is_page() ) :
   the_title('<h2>', '</h2>' );
   else: 
