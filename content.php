@@ -1,5 +1,4 @@
 <div class="post-container">
-<<<<<<< HEAD
 <?php if (is_single() ) :
   the_title('<h2>', '</h2>' );
 else:
@@ -17,3 +16,4 @@ the_excerpt();
 <?php
 endif;  
 ?>
+</div>
