@@ -142,8 +142,34 @@ aside#primary h3 {
     float: right;
     width: 32.20338983%;
     padding-right: 0%;
-    margin-right: 10px;
   }
+}
+div.home aside#secondary h3 {
+  padding: 10px 0 10px 10px;
+  background: grey;
+}
+@media all and (min-width: 39em) {
+  div.home aside#secondary {
+    float: right;
+    width: 32.20338983%;
+    padding-right: 0%;
+    background: #cccccc;
+  }
+}
+@media all and (min-width: 39em) {
+  div.home aside#primary {
+    float: none;
+    width: 91.52542373%;
+    padding-right: 0%;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+}
+div.home aside#primary .widget {
+  float: left;
+  margin-right: 10px;
+  width: 32.20338983%;
+  padding-right: 0%;
 }
 /**************** footer styles **********/
 footer {

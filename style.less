@@ -172,7 +172,32 @@ aside#primary {
   @media @tablet {
     float: right;
     .columns(4, 0);
+  }
+}
+
+div.home aside#secondary {
+  h3 {
+    padding: 10px 0 10px 10px;
+    background: grey;
+  }
+  @media @tablet {
+    float: right;
+    .columns(4, 0);
+    background: #cccccc;
+  }
+}
+
+div.home aside#primary {
+  @media @tablet {
+    float: none;
+    .columns(11, 0);
     margin-right: 10px;
+    overflow: hidden;
+  }
+  .widget {
+    float:left;
+    margin-right: 10px;
+    .columns(4, 0);
   }
 }
 

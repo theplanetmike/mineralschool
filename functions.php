@@ -24,6 +24,19 @@ function my_register_sidebars() {
 		)
 	);
 
+	/* Register the 'secondary' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'secondary',
+			'name' => __( 'Secondary' ),
+			'description' => __( 'The extra widgetized area on the home page.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
 	/* Register the 'header' sidebar. */
 	register_sidebar(
 		array(
