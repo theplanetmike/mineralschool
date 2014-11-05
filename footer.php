@@ -1,6 +1,6 @@
     <!-- BEGIN footer.php template -->
     <footer>
-      <?php wp_nav_menu( array( 'menu' => 'Main Header Menu')); ?> 
+      <?php wp_nav_menu( array( 'menu' => 'Footer Menu')); ?> 
       <p>Copyright &#169; 2014 Mineral School</p>
       <?php get_sidebar( 'footer-widgets' ); ?>
     </footer>
