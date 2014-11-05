@@ -2,7 +2,6 @@
 <!-- page-home.php template -->
 
 <div class="main home">
-  <p>testerino</p>
   <section class="main-content">
     <?php 
       if ( have_posts() ) :
@@ -18,7 +17,7 @@
     ?>
   </section>
   <?php get_sidebar( 'secondary' ); ?>
-  <?php get_sidebar( 'primary' ); ?>
+  <?php get_sidebar( 'primary-home' ); ?>
 </div>
 
 <?php get_footer(); ?>

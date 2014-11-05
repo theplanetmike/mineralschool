@@ -228,8 +228,12 @@ div.home aside#secondary h3 {
     background: #cccccc;
   }
 }
+div.home aside#primary-home h3 {
+  padding: 10px 0 10px 10px;
+  background: grey;
+}
 @media all and (min-width: 39em) {
-  div.home aside#primary {
+  div.home aside#primary-home {
     float: none;
     width: 91.52542373%;
     padding-right: 0%;
@@ -237,7 +241,7 @@ div.home aside#secondary h3 {
     overflow: hidden;
   }
 }
-div.home aside#primary .widget {
+div.home aside#primary-home .widget {
   float: left;
   margin-right: 10px;
   width: 32.20338983%;
