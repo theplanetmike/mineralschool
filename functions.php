@@ -42,6 +42,19 @@ function my_register_sidebars() {
 		)
 	);
 
+	/* Register the 'primaryHome' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'primary-home',
+			'name' => __( 'Primary Home' ),
+			'description' => __( 'The main widgetized area on the unique homepage.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
 	/* Register the 'secondary' sidebar. */
 	register_sidebar(
 		array(
