@@ -100,6 +100,14 @@ header.header-main {
   padding: 0 10px;
   margin: 0 auto;
   background: #b3b3b3;
+  overflow: hidden;
+}
+/***** header widget styles ****/
+#header-widgets {
+  float: right;
+}
+.header-utility {
+  float: right;
 }
 /***** nav styles *****/
 nav.main-nav {

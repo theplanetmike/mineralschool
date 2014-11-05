@@ -15,6 +15,10 @@
         <h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('name'); ?></a></h1>
         <h2><?php bloginfo('description'); ?></h2>
         <?php get_sidebar( 'header-widgets' ); ?>
+        <div class="header-utility">
+          <p><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
+          
+        </div>
       </header>
     </div><!-- end header.header-main -->
     <div class="nav-wrap">
