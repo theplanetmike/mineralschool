@@ -3,6 +3,7 @@
 // includes
 @import "functions";
 @import "values";
+@import "columns";
 
 /*
 Theme Name: Mineral School
@@ -137,7 +138,6 @@ h1.blog-title {
   overflow: hidden;
   @media @tablet {
     float: left;
-    .columns(8, 0);
   }
   .post-container {
     border-bottom: 3px dotted grey;
@@ -175,7 +175,6 @@ aside#primary {
   }
   @media @tablet {
     float: right;
-    .columns(4, 0);
   }
 }
 
@@ -186,7 +185,6 @@ div.home aside#secondary {
   }
   @media @tablet {
     float: right;
-    .columns(4, 0);
     background: #cccccc;
   }
 }

@@ -2,7 +2,7 @@
 <!-- page.php template -->
 
 <div class="main">
-  <section class="main-content">
+  <section class="main-content columns-8">
     <?php 
       if ( have_posts() ) :
       	while ( have_posts() ) :

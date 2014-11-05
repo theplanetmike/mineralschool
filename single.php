@@ -2,7 +2,7 @@
 <!-- single.php template -->
 
 <div class="main">
-  <section class="main-content">
+  <section class="main-content columns-8">
     <h1 class="blog-title">Blog</h1>
     <?php    
       if ( have_posts() ) :

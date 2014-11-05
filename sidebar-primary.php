@@ -1,5 +1,5 @@
 <!-- BEGIN SIDEBAR-PRIMARY.PHP -->
-<aside id="primary">
+<aside id="primary" class="columns-4">
 	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
 		<?php dynamic_sidebar( 'primary' ); ?>
 	<?php else : ?>
