@@ -3,27 +3,16 @@
 //menu function to register menu, can be used to register multiple menus if needed later
 
 //Register custom menus
-function register_my_menus() {
+function register_the_menus() {
 	register_nav_menus(
 		array( 
-		  'main-menu' => __( 'Main Header Menu' ), 		  
-		  'footer-menu' => __( 'Footer Menu' )
+		  'header-menu' => __( 'Main Header Menu' ), 		  
+		  'footer-menu' => __( 'Main Footer Menu' ),
 		)	
 	);
-
-  add_action( 'init', 'register_my_menus' );
-
 }
 
-/* Add custom menus to Dashboard > Menus, if you have menus registered. */       
-if ( function_exists( 'register_nav_menus' ) ) {
-	register_nav_menus(
-		array(
-		  'main-menu' => 'Main Header Menu',
-		  'footer-menu' => 'Footer Menu'
-		)
-	);
-}
+add_action( 'init', 'register_the_menus' );
 
 add_action( 'widgets_init', 'my_register_sidebars' );
 

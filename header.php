@@ -23,7 +23,7 @@
     </div><!-- end header.header-main -->
     <div class="nav-wrap">
       <nav class="main-nav">
-        <?php wp_nav_menu( array( 'menu' => 'Main Header Menu')); ?> 
+        <?php wp_nav_menu( array('theme_location' => 'main-menu','menu' => 'Main Header Menu' )); ?>
       </nav>
     </div><!-- end nav.main-nav -->
     <!-- END HEADER.PHP FILE -->
