@@ -82,6 +82,18 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
+  
+    register_sidebar(
+		array(
+			'id' => 'page',
+			'name' => __( 'Page' ),
+			'description' => __( 'The page widgetized area.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
 }
 
 //adding filter to modify trailing elipses at end of the_excerpt() tag

@@ -16,7 +16,7 @@
       endif;
     ?>
   </section>
-  <?php get_sidebar( 'primary' ); ?>
+  <?php get_sidebar( 'page' ); ?>
 </div>
 
 <?php get_footer(); ?>
