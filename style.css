@@ -114,11 +114,7 @@ a.header-donate {
   float: right;
 }
 /***** nav styles *****/
-div.nav-wrap {
-  overflow: hidden;
-}
 nav.main-nav {
-  overflow: hidden;
   background: #cccccc;
   background-image: url(images/nav-background-lines.png);
   max-width: 1180px;
@@ -180,6 +176,7 @@ div.menu-main-menu-container ul li:hover ul {
 }
 /******** .main styles **********/
 .main {
+  clear: both;
   padding: 20px 10px 0 10px;
   max-width: 1180px;
   margin: 0 auto;
