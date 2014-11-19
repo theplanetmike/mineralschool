@@ -54,11 +54,16 @@ header.header-main {
   float: right;
 }
 
+a.header-donate {
+  float: right;
+}
+
 /***** nav styles *****/
 
 div.nav-wrap {
 }
 nav.main-nav {
+  overflow: hidden;
   background: tint(grey, 60%);
   max-width: 1180px;
   margin: 0 auto;
@@ -84,11 +89,13 @@ nav.main-nav {
   }
 }
 
+div.menu-main-menu-container {
+  float: left;
+}
+
 div.menu-main-menu-container ul {
   text-align: left;
-  display: inline;
   margin: 0;
-  padding: 15px 4px 17px 0;
   list-style: none;
 }
 div.menu-main-menu-container ul li {
@@ -189,6 +196,14 @@ aside#primary {
   }
 }
 
+/*** .home aside#secondary styling ***/
+
+.home .main-content {
+  float: none;
+  .page-container {
+    float: left;
+  }
+}
 div.home aside#secondary {
   h3 {
     padding: 10px 0 10px 10px;
@@ -200,21 +215,23 @@ div.home aside#secondary {
   }
 }
 
-div.home aside#primary-home {
+aside#primary-home {
+  clear: both;
   h3 {
     padding: 10px 0 10px 10px;
     background: grey;
   }
   @media @tablet {
     float: none;
-    .columns(11, 0);
-    margin: 20px 10px 0 0;
+    padding-top: 20px;
     overflow: hidden;
   }
   .widget {
-    float:left;
-    margin-right: 10px;
-    .columns(4, 0);
+    float: left;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

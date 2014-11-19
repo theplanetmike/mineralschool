@@ -12,7 +12,7 @@
   <body>
     <div class="header-wrap">
       <header class="header-main">
-        <h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('name'); ?></a></h1>
+        <a href="<?php echo esc_url(home_url()); ?>"><img src="<?php bloginfo('template_url'); ?>/images/placeholder.jpg" alt="<?php bloginfo('name'); ?>"></a>
         <h2><?php bloginfo('description'); ?></h2>
         <?php get_sidebar( 'header-widgets' ); ?>
         <div class="header-utility">
@@ -24,6 +24,7 @@
     <div class="nav-wrap">
       <nav class="main-nav">
         <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
+        <a class="header-donate" href="shunpike.org"><img src="<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
       </nav>
     </div><!-- end nav.main-nav -->
     <!-- END HEADER.PHP FILE -->

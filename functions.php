@@ -37,7 +37,7 @@ function my_register_sidebars() {
 			'id' => 'primary-home',
 			'name' => __( 'Primary Home' ),
 			'description' => __( 'The main widgetized area on the unique homepage.' ),
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'before_widget' => '<div id="%1$s" class="widget %2$s columns-4">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'
