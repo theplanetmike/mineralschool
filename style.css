@@ -112,8 +112,12 @@ header.header-main {
   float: right;
   font-family: 'Roboto Condensed', sans-serif;
 }
+a.header-donate {
+  float: right;
+}
 /***** nav styles *****/
 nav.main-nav {
+  background: #cccccc;
   background-image: url(images/nav-background-lines.png);
   max-width: 1180px;
   margin: 0 auto;
@@ -132,11 +136,12 @@ nav.main-nav ul li a:visited {
     list-style-type: none;
   }
 }
+div.menu-main-menu-container {
+  float: left;
+}
 div.menu-main-menu-container ul {
   text-align: left;
-  display: inline;
   margin: 0;
-  padding: 15px 4px 17px 0;
   list-style: none;
 }
 div.menu-main-menu-container ul li {
@@ -177,6 +182,7 @@ div.menu-main-menu-container ul li:hover ul {
 }
 /******** .main styles **********/
 .main {
+  clear: both;
   padding: 20px 10px 0 10px;
   max-width: 1180px;
   margin: 0 auto;
@@ -234,6 +240,13 @@ aside#primary h3 {
     float: right;
   }
 }
+/*** .home aside#secondary styling ***/
+.home .main-content {
+  float: none;
+}
+.home .main-content .page-container {
+  float: left;
+}
 div.home aside#secondary h3 {
   padding: 10px 0 10px 10px;
   background: grey;
@@ -244,24 +257,26 @@ div.home aside#secondary h3 {
     background: #cccccc;
   }
 }
-div.home aside#primary-home h3 {
+aside#primary-home {
+  clear: both;
+}
+aside#primary-home h3 {
   padding: 10px 0 10px 10px;
   background: grey;
 }
 @media all and (min-width: 39em) {
-  div.home aside#primary-home {
+  aside#primary-home {
     float: none;
-    width: 91.52542373%;
-    padding-right: 0%;
-    margin: 20px 10px 0 0;
+    padding-top: 20px;
     overflow: hidden;
   }
 }
-div.home aside#primary-home .widget {
+aside#primary-home .widget {
   float: left;
-  margin-right: 10px;
-  width: 32.20338983%;
-  padding-right: 0%;
+  margin-right: 20px;
+}
+aside#primary-home .widget:last-child {
+  margin-right: 0;
 }
 /**************** footer styles **********/
 footer {

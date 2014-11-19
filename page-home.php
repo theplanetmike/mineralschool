@@ -15,8 +15,8 @@
       	endwhile;
       endif;
     ?>
+    <?php get_sidebar( 'secondary' ); ?>
   </section>
-  <?php get_sidebar( 'secondary' ); ?>
   <?php get_sidebar( 'primary-home' ); ?>
 </div>
 
