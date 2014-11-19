@@ -29,7 +29,7 @@ a img {
 /****** body styles *****/
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif; 
   font-size: 100%;
   line-height: 1.5;
 }
@@ -40,7 +40,7 @@ header.header-main {
   max-width: 1180px;
   padding: 0 10px;
   margin: 0 auto;
-  background: tint(grey, 40%);
+  background-image:url(images/header-chalkboard.jpg);
   overflow: hidden;
 }
 
@@ -52,6 +52,7 @@ header.header-main {
 
 .header-utility {
   float: right;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /***** nav styles *****/
@@ -59,13 +60,14 @@ header.header-main {
 div.nav-wrap {
 }
 nav.main-nav {
-  background: tint(grey, 60%);
+  background-image:url(images/nav-background-lines.png);
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 10px;
   ul {
     li {
       list-style-type: none;
+	  font-family: 'Roboto Condensed', sans-serif;
       a {
         &:link, &:visited {
           
@@ -92,7 +94,7 @@ div.menu-main-menu-container ul {
   list-style: none;
 }
 div.menu-main-menu-container ul li {
-  font: bold 12px/18px sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   display: inline-block;
   margin-right: -4px;
   position: relative;
@@ -234,6 +236,7 @@ footer {
       display: none;
       visibility: hidden;
       opacity: 0;
+	  list-style-type: none;
     }
   }
 
