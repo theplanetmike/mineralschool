@@ -114,11 +114,12 @@ a.header-donate {
   float: right;
 }
 /***** nav styles *****/
+div.nav-wrap {
+  overflow: hidden;
+}
 nav.main-nav {
-<<<<<<< HEAD
   overflow: hidden;
   background: #cccccc;
-=======
   background-image: url(images/nav-background-lines.png);
   max-width: 1180px;
   margin: 0 auto;
