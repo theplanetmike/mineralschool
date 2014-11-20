@@ -26,6 +26,11 @@ a img {
   border: 0;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 /****** body styles *****/
 
 body {
@@ -38,21 +43,30 @@ body {
 
 header.header-main {
   max-width: 1180px;
-  padding: 0 10px;
   margin: 0 auto;
   background-image:url(images/header-chalkboard.jpg);
   overflow: hidden;
+  color: white;
+  a:link, a:visited {
+    color: white;
+  }
+  @media @tablet {
+    padding: 0 10px;
+  }
+  h1 {
+    @media @tablet {
+      float: left;
+    }
+  }
 }
 
 /***** header widget styles ****/
 
-#header-widgets {
-  float: right;
-}
-
 .header-utility {
-  float: right;
   font-family: 'Roboto Condensed', sans-serif;
+  @media @tablet {
+    float: right;
+  }
 }
 
 a.header-donate {
@@ -181,6 +195,9 @@ h1.blog-title {
     overflow: hidden;
     @media @tablet {
       padding-left: 20px;
+      .home & {
+        padding-left: 0;
+      }
       p {
         padding: 0 10px;
       }
@@ -192,7 +209,8 @@ h1.blog-title {
 aside#primary {
   h3 {
     padding: 10px 0 10px 10px;
-    background: grey;
+    background-image:url(images/header-chalkboard.jpg);
+    color: white;
   }
   @media @tablet {
     float: right;
@@ -202,38 +220,37 @@ aside#primary {
 /*** .home aside#secondary styling ***/
 
 .home .main-content {
-  float: none;
   .page-container {
     float: left;
   }
 }
 div.home aside#secondary {
+  background: none;
   h3 {
     padding: 10px 0 10px 10px;
-    background: grey;
   }
   @media @tablet {
     float: right;
-    background: #cccccc;
   }
 }
 
 aside#primary-home {
   clear: both;
+  padding-top: 20px;
   h3 {
     padding: 10px 0 10px 10px;
-    background: grey;
+    background-image:url(images/header-chalkboard.jpg);
+    color: white;
   }
   @media @tablet {
-    float: none;
-    padding-top: 20px;
     overflow: hidden;
-  }
-  .widget {
-    float: left;
-    margin-right: 20px;
-    &:last-child {
-      margin-right: 0;
+    .widget {
+      float: left;
+      margin-right: 1.6%;
+      &:last-child {
+        margin-right: 0;
+        float: right;
+      }
     }
   }
 }
@@ -245,7 +262,7 @@ footer {
   margin: 0 auto;
   clear: both;
   padding: 0 10px;
-  background: tint(grey, 40%);
+  background-image:url(images/header-chalkboard.jpg);
 }
 
   /** footer nav menu styles **/

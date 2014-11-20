@@ -16,11 +16,9 @@
       <header class="header-main">
       	 <h1><a href="<?php echo esc_url(home_url()); ?>"><img src="<?php bloginfo('template_url'); ?>/images/mineralschool-logo.png"alt="<?php bloginfo('name'); ?>" /></a></h1>
         
-        
-        <?php get_sidebar( 'header-widgets' ); ?>
         <div class="header-utility">
-          <p><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
-          
+          <?php get_sidebar( 'header-widgets' ); ?>
+            <p><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
         </div>
       </header>
     </div><!-- end header.header-main -->

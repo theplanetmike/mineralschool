@@ -88,6 +88,10 @@ body * {
 a img {
   border: 0;
 }
+img {
+  height: auto;
+  max-width: 100%;
+}
 /****** body styles *****/
 body {
   font-family: 'Roboto', sans-serif;
@@ -97,18 +101,33 @@ body {
 /****** header styles *****/
 header.header-main {
   max-width: 1180px;
-  padding: 0 10px;
   margin: 0 auto;
   background-image: url(images/header-chalkboard.jpg);
   overflow: hidden;
+  color: white;
+}
+header.header-main a:link,
+header.header-main a:visited {
+  color: white;
+}
+@media all and (min-width: 39em) {
+  header.header-main {
+    padding: 0 10px;
+  }
+}
+@media all and (min-width: 39em) {
+  header.header-main h1 {
+    float: left;
+  }
 }
 /***** header widget styles ****/
-#header-widgets {
-  float: right;
-}
 .header-utility {
-  float: right;
   font-family: 'Roboto Condensed', sans-serif;
+}
+@media all and (min-width: 39em) {
+  .header-utility {
+    float: right;
+  }
 }
 a.header-donate {
   float: right;
@@ -224,6 +243,9 @@ h1.blog-title {
   .page-container {
     padding-left: 20px;
   }
+  .home .page-container {
+    padding-left: 0;
+  }
   .page-container p {
     padding: 0 10px;
   }
@@ -231,7 +253,8 @@ h1.blog-title {
 /******* aside#primary styles ********/
 aside#primary h3 {
   padding: 10px 0 10px 10px;
-  background: grey;
+  background-image: url(images/header-chalkboard.jpg);
+  color: white;
 }
 @media all and (min-width: 39em) {
   aside#primary {
@@ -239,42 +262,41 @@ aside#primary h3 {
   }
 }
 /*** .home aside#secondary styling ***/
-.home .main-content {
-  float: none;
-}
 .home .main-content .page-container {
   float: left;
 }
+div.home aside#secondary {
+  background: none;
+}
 div.home aside#secondary h3 {
   padding: 10px 0 10px 10px;
-  background: grey;
 }
 @media all and (min-width: 39em) {
   div.home aside#secondary {
     float: right;
-    background: #cccccc;
   }
 }
 aside#primary-home {
   clear: both;
+  padding-top: 20px;
 }
 aside#primary-home h3 {
   padding: 10px 0 10px 10px;
-  background: grey;
+  background-image: url(images/header-chalkboard.jpg);
+  color: white;
 }
 @media all and (min-width: 39em) {
   aside#primary-home {
-    float: none;
-    padding-top: 20px;
     overflow: hidden;
   }
-}
-aside#primary-home .widget {
-  float: left;
-  margin-right: 20px;
-}
-aside#primary-home .widget:last-child {
-  margin-right: 0;
+  aside#primary-home .widget {
+    float: left;
+    margin-right: 1.6%;
+  }
+  aside#primary-home .widget:last-child {
+    margin-right: 0;
+    float: right;
+  }
 }
 /**************** footer styles **********/
 footer {
@@ -282,7 +304,7 @@ footer {
   margin: 0 auto;
   clear: both;
   padding: 0 10px;
-  background: #b3b3b3;
+  background-image: url(images/header-chalkboard.jpg);
 }
 /** footer nav menu styles **/
 footer div.menu-main-menu-container ul li:hover ul {
