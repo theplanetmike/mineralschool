@@ -238,6 +238,7 @@ h1.blog-title {
 /***** page-specific post styles *****/
 .page-container {
   overflow: hidden;
+  margin-bottom: 20px;
 }
 @media all and (min-width: 39em) {
   .page-container {
@@ -251,6 +252,12 @@ h1.blog-title {
   }
 }
 /******* aside#primary styles ********/
+.widget {
+  margin-bottom: 10px;
+}
+.widget ul {
+  margin: 0;
+}
 aside#primary h3 {
   padding: 10px 0 10px 10px;
   background-image: url(images/header-chalkboard.jpg);
@@ -304,14 +311,32 @@ footer {
   margin: 0 auto;
   clear: both;
   padding: 0 10px;
+  overflow: hidden;
   background-image: url(images/header-chalkboard.jpg);
+  color: white;
 }
-/** footer nav menu styles **/
-footer div.menu-main-menu-container ul li:hover ul {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
+/**** footer nav styles ****/
+.menu-footer-menu-container li {
+  margin: 0;
+  float: left;
   list-style-type: none;
+}
+.menu-footer-menu-container li:after {
+  content: " |";
+  padding-right: 5px;
+}
+.menu-footer-menu-container li:last-child:after {
+  content: "";
+}
+.menu-footer-menu-container li a:link,
+.menu-footer-menu-container li a:visited {
+  color: white;
+  list-style-type: none;
+}
+.menu-footer-menu-container li a:hover,
+.menu-footer-menu-container li a:focus {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 /***** global typography styles ******/
 h1,
