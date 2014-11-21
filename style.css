@@ -99,10 +99,12 @@ body {
   line-height: 1.5;
 }
 /****** header styles *****/
+.header-wrap {
+  background-image: url(images/header-chalkboard.jpg);
+}
 header.header-main {
   max-width: 1180px;
   margin: 0 auto;
-  background-image: url(images/header-chalkboard.jpg);
   overflow: hidden;
   color: white;
 }
