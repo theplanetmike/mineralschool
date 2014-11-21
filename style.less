@@ -5,8 +5,8 @@
 @import "values";
 @import "columns";
 
-/*
-Theme Name: Mineral School
+
+/*Theme Name: Mineral School
 Theme URI: http://www.staging.designbydoug.com/themes/mineralschool
 Author: Seattle Central College ITC 210 project team
 Author URI: http://staging.designbydoug.com
@@ -40,16 +40,23 @@ body {
 }
 
 /****** header styles *****/
-
+.header-wrap{
+	background-image:url(images/header-chalkboard.jpg);
+}
+	
 header.header-main {
   max-width: 1180px;
+  padding: 0 10px;
   margin: 0 auto;
-  background-image:url(images/header-chalkboard.jpg);
+  
   overflow: hidden;
   color: white;
   a:link, a:visited {
     color: white;
   }
+  /*header.header-main h1 {
+	  padding: 20px 0 0 200px;
+  }*/
   @media @tablet {
     padding: 0 10px;
   }
@@ -65,7 +72,7 @@ header.header-main {
 .header-utility {
   font-family: 'Roboto Condensed', sans-serif;
   @media @tablet {
-    float: right;
+  float: right;
   }
 }
 
@@ -75,19 +82,23 @@ a.header-donate {
 
 /***** nav styles *****/
 nav.main-nav {
-  background: tint(grey, 60%);
-  background-image:url(images/nav-background-lines.png);
+/*  background: tint(grey, 60%);
+  background-image:url(images/nav-background-lines.png);*/
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 10px;
+ 
   ul {
     li {
       list-style-type: none;
 	  font-family: 'Roboto Condensed', sans-serif;
+	  
       a {
         &:link, &:visited {
 			text-decoration: none;
-          
+			color: #383D36;
+			font-size:1.25em;
+			
         }
       }
     }
@@ -103,6 +114,24 @@ nav.main-nav {
   }
 }
 
+
+div.menu-main-divider-top{
+	background-image:url(images/nav-lines-upper.png);
+	background-repeat:repeat-x;
+	height: 10px;
+	max-width: 100%;
+  	margin: 0 auto;
+  	padding: 0 10px;
+}
+/*div.menu-main-divider-bottom{
+	background-image:url(images/nav-lines-lower.png);
+	background-repeat:repeat-x;
+	height: 10px;
+	max-width: 100%;
+  	margin: 0 auto;
+  	padding: 0 10px;
+}*/
+
 div.menu-main-menu-container {
   float: left;
 }
@@ -111,6 +140,7 @@ div.menu-main-menu-container ul {
   text-align: left;
   margin: 0;
   list-style: none;
+  
 }
 div.menu-main-menu-container ul li {
   font-family: 'Roboto Condensed', sans-serif;
@@ -119,11 +149,12 @@ div.menu-main-menu-container ul li {
   position: relative;
   padding: 15px 20px;
   background: transparent;
+  color: #383D36;
   cursor: pointer;
 }
 div.menu-main-menu-container ul li:hover {
-  background: #555;
-  color: #fff;
+  background:  transparent;
+  color: #383D36;
 }
 div.menu-main-menu-container ul li ul {
   padding: 0;
@@ -135,13 +166,18 @@ div.menu-main-menu-container ul li ul {
   opacity: 0;
   visibility: hidden;
 }
+
 div.menu-main-menu-container ul li ul li { 
-  background: #555; 
+  background:  #fff; 
   display: block; 
-  color: #fff;
+  margin: 0px;
 }
 
-div.menu-main-menu-container ul li ul li:hover { background: #666; }
+div.menu-main-menu-container ul li ul li:hover { 
+  background: #DBD9BC;
+  color: #FFF;
+	
+}
 
 div.menu-main-menu-container ul li:hover ul {
   display: block;
@@ -265,7 +301,8 @@ aside#primary-home {
 /**************** footer styles **********/
 
 footer {
-  max-width: 1180px;
+  max-width: 100%;
+  padding: 20px 0 0 120px;
   margin: 0 auto;
   clear: both;
   padding: 0 10px;
@@ -281,6 +318,8 @@ footer {
     margin: 0;
     float: left;
     list-style-type: none;
+	background-image:url(images/header-chalkboard.jpg);
+    overflow: hidden;
     &:after {
       content: " |";
       padding-right: 5px;
@@ -298,6 +337,30 @@ footer {
         border-bottom: 1px solid tint(white, 2%);
       }
     }
+
+  
+
+}
+
+  /** footer nav menu styles **/
+  .menu-footer-menu-container {
+    ul {
+    li {
+      list-style-type: none;
+	  display:inline;
+	  font-family: 'Roboto Condensed', sans-serif;
+      a {
+        &:link, &:visited {
+			text-decoration: none;
+			
+			color: #fff;
+			font-size:1em;
+			
+          
+        }
+      }
+	}
+
   }
 }
 
@@ -412,15 +475,16 @@ textarea.longfield {
   max-width: 640px;
 }
 
-/*input[type=submit] {       old way of doing this */
+/*input[type=submit]       old way of doing this */
 input.submit {
   -webkit-appearance: none;
   -moz-appearance: none;
-  /*appearance: none;  */
+/*  appearance: none;  */
   padding: .75em 1em;
   border: 0 none;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ie-border-radius: 3px;
+}
 }

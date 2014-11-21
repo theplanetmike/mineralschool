@@ -12,20 +12,49 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    
     <div class="header-wrap">
       <header class="header-main">
       	 <h1><a href="<?php echo esc_url(home_url()); ?>"><img src="<?php bloginfo('template_url'); ?>/images/mineralschool-logo.png"alt="<?php bloginfo('name'); ?>" /></a></h1>
+
         
         <div class="header-utility">
+        <img src="images/facebook-logo.png"alt="facebook link"/>
+        <img src="images/instagram-logo.png"alt="instagram link"/>
+        <img src="images/twitter-logo.png"alt="twitter link"/>
+        <img src="images/linkedin.png"alt="linkedin link"/>
           <?php get_sidebar( 'header-widgets' ); ?>
             <p><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
         </div>
       </header>
     </div><!-- end header.header-main -->
+
+         
+         
+        <?php get_sidebar( 'header-widgets' ); ?>
+        <div class="header-utility">
+        <a href="
+          <p><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
+          </div><!-- end .header-utility-->
+          </header><!-- end header.header-main --> 
+        </div><!-- end header-wrap -->
+    
+   
+    
+    
+
     <div class="nav-wrap">
+     <div class="menu-main-divider-top">
       <nav class="main-nav">
         <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
         <a class="header-donate" href="shunpike.org"><img src="<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
+         <div class="menu-main-divider-bottom">
+       
+       </div> <!--closes menu-main-divider-bottom--> 
       </nav>
-    </div><!-- end nav.main-nav -->
+     </div><!--closes menu-main-divider-top-->
+    </div><!-- end nav-wrap -->
     <!-- END HEADER.PHP FILE -->
+    
+    
+    
