@@ -133,7 +133,21 @@ header.header-main a:visited {
   font-family: 'Roboto Condensed', sans-serif;
 }
 @media all and (min-width: 39em) {
+  .header-utility .loginout {
+    text-align: right;
+  }
+}
+@media all and (min-width: 39em) {
   .header-utility {
+    float: right;
+  }
+}
+.header-utility .social-links {
+  margin: 0 auto;
+}
+@media all and (min-width: 39em) {
+  .header-utility .social-links {
+    margin: none;
     float: right;
   }
 }
@@ -317,6 +331,9 @@ aside#primary-home {
   clear: both;
   padding-top: 20px;
 }
+aside#primary-home a.read-more-button {
+  float: right;
+}
 aside#primary-home h3 {
   padding: 10px 0 10px 10px;
   background-image: url(images/header-chalkboard.jpg);
@@ -336,14 +353,16 @@ aside#primary-home h3 {
   }
 }
 /**************** footer styles **********/
+.footer-wrap {
+  background-image: url(images/header-chalkboard.jpg);
+}
 footer {
-  max-width: 100%;
+  max-width: 1180px;
   padding: 20px 0 0 120px;
   margin: 0 auto;
   clear: both;
   padding: 0 10px;
   overflow: hidden;
-  background-image: url(images/header-chalkboard.jpg);
   color: white;
 }
 /**** footer nav styles ****/
@@ -353,27 +372,30 @@ footer {
   /***** global form styles ******/
   /*input[type=submit]       old way of doing this */
 }
-.menu-footer-menu-container li {
+.menu-footer-menu-container ul {
   margin: 0;
+}
+.menu-footer-menu-container ul li {
+  margin: 0 0 20px 0;
   float: left;
   list-style-type: none;
   background-image: url(images/header-chalkboard.jpg);
   overflow: hidden;
 }
-.menu-footer-menu-container li:after {
+.menu-footer-menu-container ul li:after {
   content: " |";
   padding-right: 5px;
 }
-.menu-footer-menu-container li:last-child:after {
+.menu-footer-menu-container ul li:last-child:after {
   content: "";
 }
-.menu-footer-menu-container li a:link,
-.menu-footer-menu-container li a:visited {
+.menu-footer-menu-container ul li a:link,
+.menu-footer-menu-container ul li a:visited {
   color: white;
-  list-style-type: none;
+  text-decoration: none;
 }
-.menu-footer-menu-container li a:hover,
-.menu-footer-menu-container li a:focus {
+.menu-footer-menu-container ul li a:hover,
+.menu-footer-menu-container ul li a:focus {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
@@ -406,9 +428,6 @@ footer {
 .menu-footer-menu-container ol {
   text-align: left;
   margin: .7em 0 1em 1.75em;
-}
-.menu-footer-menu-container li {
-  margin: .7em 0 0 1.5em;
 }
 .menu-footer-menu-container blockquote {
   border-left: 10px solid #ccc;

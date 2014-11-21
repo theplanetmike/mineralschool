@@ -20,30 +20,17 @@
 
         
         <div class="header-utility">
-        <img src="images/facebook-logo.png"alt="facebook link"/>
-        <img src="images/instagram-logo.png"alt="instagram link"/>
-        <img src="images/twitter-logo.png"alt="twitter link"/>
-        <img src="images/linkedin.png"alt="linkedin link"/>
           <?php get_sidebar( 'header-widgets' ); ?>
-            <p><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
+          <p class="loginout"><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
+          <div class="social-links">
+            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/facebook-logo.png"alt="facebook link"/></a>
+            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/instagram-logo.png"alt="instagram link"/></a>
+            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png"alt="twitter link"/></a>
+            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/linkedin.png"alt="linkedin link"/></a>
+          </div>
         </div>
       </header>
     </div><!-- end header.header-main -->
-
-         
-         
-        <?php get_sidebar( 'header-widgets' ); ?>
-        <div class="header-utility">
-        <a href="
-          <p><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
-          </div><!-- end .header-utility-->
-          </header><!-- end header.header-main --> 
-        </div><!-- end header-wrap -->
-    
-   
-    
-    
-
     <div class="nav-wrap">
      <div class="menu-main-divider-top">
       <nav class="main-nav">
