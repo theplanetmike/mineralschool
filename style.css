@@ -70,8 +70,7 @@
     padding-right: 0%;
   }
 }
-/*
-Theme Name: Mineral School
+/*Theme Name: Mineral School
 Theme URI: http://www.staging.designbydoug.com/themes/mineralschool
 Author: Seattle Central College ITC 210 project team
 Author URI: http://staging.designbydoug.com
@@ -102,11 +101,18 @@ body {
 .header-wrap {
   background-image: url(images/header-chalkboard.jpg);
 }
+.header-wrap {
+  background-image: url(images/header-chalkboard.jpg);
+}
 header.header-main {
   max-width: 1180px;
+  padding: 0 10px;
   margin: 0 auto;
   overflow: hidden;
   color: white;
+  /*header.header-main h1 {
+	  padding: 20px 0 0 200px;
+  }*/
 }
 header.header-main a:link,
 header.header-main a:visited {
@@ -136,8 +142,8 @@ a.header-donate {
 }
 /***** nav styles *****/
 nav.main-nav {
-  background: #cccccc;
-  background-image: url(images/nav-background-lines.png);
+  /*  background: tint(grey, 60%);
+  background-image:url(images/nav-background-lines.png);*/
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 10px;
@@ -149,12 +155,30 @@ nav.main-nav ul li {
 nav.main-nav ul li a:link,
 nav.main-nav ul li a:visited {
   text-decoration: none;
+  color: #383D36;
+  font-size: 1.25em;
 }
 @media all and (min-width: 39em) {
   nav.main-nav ul li {
     list-style-type: none;
   }
 }
+div.menu-main-divider-top {
+  background-image: url(images/nav-lines-upper.png);
+  background-repeat: repeat-x;
+  height: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/*div.menu-main-divider-bottom{
+	background-image:url(images/nav-lines-lower.png);
+	background-repeat:repeat-x;
+	height: 10px;
+	max-width: 100%;
+  	margin: 0 auto;
+  	padding: 0 10px;
+}*/
 div.menu-main-menu-container {
   float: left;
 }
@@ -170,11 +194,12 @@ div.menu-main-menu-container ul li {
   position: relative;
   padding: 15px 20px;
   background: transparent;
+  color: #383D36;
   cursor: pointer;
 }
 div.menu-main-menu-container ul li:hover {
-  background: #555;
-  color: #fff;
+  background: transparent;
+  color: #383D36;
 }
 div.menu-main-menu-container ul li ul {
   padding: 0;
@@ -187,12 +212,13 @@ div.menu-main-menu-container ul li ul {
   visibility: hidden;
 }
 div.menu-main-menu-container ul li ul li {
-  background: #555;
+  background: #fff;
   display: block;
-  color: #fff;
+  margin: 0px;
 }
 div.menu-main-menu-container ul li ul li:hover {
-  background: #666;
+  background: #DBD9BC;
+  color: #FFF;
 }
 div.menu-main-menu-container ul li:hover ul {
   display: block;
@@ -311,7 +337,8 @@ aside#primary-home h3 {
 }
 /**************** footer styles **********/
 footer {
-  max-width: 1180px;
+  max-width: 100%;
+  padding: 20px 0 0 120px;
   margin: 0 auto;
   clear: both;
   padding: 0 10px;
@@ -320,10 +347,18 @@ footer {
   color: white;
 }
 /**** footer nav styles ****/
+.menu-footer-menu-container {
+  /** footer nav menu styles **/
+  /***** global typography styles ******/
+  /***** global form styles ******/
+  /*input[type=submit]       old way of doing this */
+}
 .menu-footer-menu-container li {
   margin: 0;
   float: left;
   list-style-type: none;
+  background-image: url(images/header-chalkboard.jpg);
+  overflow: hidden;
 }
 .menu-footer-menu-container li:after {
   content: " |";
@@ -342,36 +377,46 @@ footer {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
-/***** global typography styles ******/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.menu-footer-menu-container .menu-footer-menu-container ul li {
+  list-style-type: none;
+  display: inline;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.menu-footer-menu-container .menu-footer-menu-container ul li a:link,
+.menu-footer-menu-container .menu-footer-menu-container ul li a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+.menu-footer-menu-container h1,
+.menu-footer-menu-container h2,
+.menu-footer-menu-container h3,
+.menu-footer-menu-container h4,
+.menu-footer-menu-container h5,
+.menu-footer-menu-container h6 {
   font-weight: normal;
 }
-p {
+.menu-footer-menu-container p {
   margin-top: .5em;
 }
-ul {
+.menu-footer-menu-container ul {
   text-align: left;
   margin: .7em 0 1em 1.5em;
 }
-ol {
+.menu-footer-menu-container ol {
   text-align: left;
   margin: .7em 0 1em 1.75em;
 }
-li {
+.menu-footer-menu-container li {
   margin: .7em 0 0 1.5em;
 }
-blockquote {
+.menu-footer-menu-container blockquote {
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
-blockquote:before {
+.menu-footer-menu-container blockquote:before {
   color: #ccc;
   content: open-quote;
   font-size: 4em;
@@ -379,17 +424,16 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-blockquote p {
+.menu-footer-menu-container blockquote p {
   display: inline;
 }
-p.em {
+.menu-footer-menu-container p.em {
   font-weight: bold;
 }
-a:link {
+.menu-footer-menu-container a:link {
   text-decoration: underline;
 }
-/***** global form styles ******/
-input.shortfield {
+.menu-footer-menu-container input.shortfield {
   -webkit-appearance: none;
   -moz-appearance: none;
   /*appearance: none;  */
@@ -403,7 +447,7 @@ input.shortfield {
   min-width: 240px;
   max-width: 340px;
 }
-textarea.longfield {
+.menu-footer-menu-container textarea.longfield {
   -webkit-appearance: none;
   -moz-appearance: none;
   /*appearance: none;  */
@@ -417,11 +461,10 @@ textarea.longfield {
   min-width: 240px;
   max-width: 640px;
 }
-/*input[type=submit] {       old way of doing this */
-input.submit {
+.menu-footer-menu-container input.submit {
   -webkit-appearance: none;
   -moz-appearance: none;
-  /*appearance: none;  */
+  /*  appearance: none;  */
   padding: .75em 1em;
   border: 0 none;
   border-radius: 3px;
