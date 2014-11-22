@@ -9,8 +9,11 @@
 		while ( have_posts() ) :
 	      the_post();
 	      get_template_part('content', get_post_format());
-		endwhile;
-	endif;
+		endwhile; ?>
+        <div class="nav-previous alignright"><?php next_posts_link( '<<' );
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo ' Page ' . $paged . ' of ' . $wp_query->max_num_pages; ?></div>
+<div class="nav-next alignleft"><?php previous_posts_link( '>>' ); ?></div>
+	<?php endif;
 	?>
   </section>
   <?php get_sidebar( 'primary' ); ?>

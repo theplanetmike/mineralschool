@@ -44,22 +44,11 @@ body {
 .header-wrap{
 	background-image:url(images/header-chalkboard.jpg);
 }
-	
-
-
-.header-wrap {
-  background-image: url(images/header-chalkboard.jpg);
-}
-
 
 header.header-main {
   max-width: 1180px;
   padding: 0 10px;
   margin: 0 auto;
-
-  
-
-
   overflow: hidden;
   color: white;
   a:link, a:visited {
@@ -157,6 +146,9 @@ div.menu-main-divider-top{
 
 div.menu-main-menu-container {
   float: left;
+  a {
+    border-bottom: none;
+  }
 }
 
 div.menu-main-menu-container ul {
@@ -222,8 +214,9 @@ div.menu-main-menu-container ul li:hover ul {
 
 h1.blog-title {
   padding: 5px 0 5px 20px;
-  background: grey;
+  background-image:url(images/header-chalkboard.jpg);
   font-size: 2.2em;
+  color: white;
 }
 
 /****** post styles ********/
@@ -234,7 +227,7 @@ h1.blog-title {
     float: left;
   }
   .post-container {
-    border-bottom: 3px dotted grey;
+    border-bottom: 3px dotted #383D36;
     margin-bottom: 10px;
     overflow: hidden;
     @media @tablet {
@@ -267,9 +260,29 @@ h1.blog-title {
 /******* aside#primary styles ********/
 
 .widget {
+  overflow: hidden;
   margin-bottom: 10px;
+  p {
+    margin: 0 0 5px 15px;
+  }
+  a.read-more-button {
+    float: right;
+    padding: 5px;
+    &:link, &:visited {
+      border: none;
+      background: #DBD9BC;
+      color: #383D36;
+    }
+    &:hover, &:focus {
+      background: shade(#DBD9BC, 10%);
+    }
+  }
   ul {
     margin: 0;
+    li {
+      list-style-type: none;
+      margin-left: 15px;
+    }
   }
 }
 aside#primary {
@@ -334,12 +347,21 @@ aside#primary-home {
 
 footer {
   max-width: 1180px;
-  padding: 20px 0 0 120px;
+  padding: 10px 10px 0 10px;
   margin: 0 auto;
   clear: both;
-  padding: 0 10px;
   overflow: hidden;
   color: white;
+  li a, p a {
+      &:link, &:visited {
+        color: white;
+        text-decoration: none;
+      }
+      &:hover, &:focus {
+        color: tint(white, 2%);
+        border-bottom: 1px solid tint(white, 2%);
+      }
+    }
 }
 
 /**** footer nav styles ****/
@@ -359,39 +381,24 @@ footer {
     }
     &:last-child:after {
       content: "";
-    };
-    a {
-      &:link, &:visited {
-        color: white;
-        text-decoration: none;
-      }
-      &:hover, &:focus {
-        color: tint(white, 2%);
-        border-bottom: 1px solid tint(white, 2%);
-      }
     }
   }
   }
+}
 
-  /** footer nav menu styles **/
-  .menu-footer-menu-container {
-    ul {
-    li {
-      list-style-type: none;
-	  display:inline;
-	  font-family: 'Roboto Condensed', sans-serif;
-      a {
-        &:link, &:visited {
-			text-decoration: none;
-			
-			color: #fff;
-			font-size:1em;
-			
-          
-        }
-      }
-	}
+/***** .footer-left styling ****/
 
+.footer-left {
+  @media @tablet {
+    float: left;
+  }
+}
+
+/***** .footer-right styling ****/
+
+.footer-right {
+  @media @tablet {
+    float: right;
   }
 }
 
@@ -450,16 +457,21 @@ p.em {
   font-weight:bold;
 
 }
+  
 
-a:link {
-  text-decoration: underline;
-}
-a:visited {
-}
-a:hover, a:focus {
-}
-
+  
 img {
+}
+
+.main a {
+  &:link, &:visited {
+    color: shade(#16a085, 20%);
+    text-decoration: none;
+  }
+  &:hover, &:focus {
+    border-bottom: none;
+    color: tint(shade(#16a085, 20%), 30%);
+  }
 }
 
 
@@ -514,4 +526,35 @@ input.submit {
   -moz-border-radius: 3px;
   -ie-border-radius: 3px;
 }
+
+/**** search field styles ****/
+
+form.search-form {
+  float: right;
+  span {
+    display: none;
+  }
 }
+
+img.search-icon {
+  padding-top: 4px;
+  width: 22px;
+  height: 22px;
+}
+
+input.search-field {
+  color: white;
+  background: none;
+  width: 120px;
+  height: 15px;
+  line-height:20px;
+  border: none;
+  overflow:hidden;
+  border-bottom: 2px solid white;
+  font-family: inherit;
+}
+
+input.search-field-clicked {
+  border-bottom: 2px solid white;
+}
+

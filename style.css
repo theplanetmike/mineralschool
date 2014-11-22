@@ -101,9 +101,6 @@ body {
 .header-wrap {
   background-image: url(images/header-chalkboard.jpg);
 }
-.header-wrap {
-  background-image: url(images/header-chalkboard.jpg);
-}
 header.header-main {
   max-width: 1180px;
   padding: 0 10px;
@@ -196,6 +193,9 @@ div.menu-main-divider-top {
 div.menu-main-menu-container {
   float: left;
 }
+div.menu-main-menu-container a {
+  border-bottom: none;
+}
 div.menu-main-menu-container ul {
   text-align: left;
   margin: 0;
@@ -250,8 +250,9 @@ div.menu-main-menu-container ul li:hover ul {
 /******* blog title styles ******/
 h1.blog-title {
   padding: 5px 0 5px 20px;
-  background: grey;
+  background-image: url(images/header-chalkboard.jpg);
   font-size: 2.2em;
+  color: white;
 }
 /****** post styles ********/
 .main-content {
@@ -263,7 +264,7 @@ h1.blog-title {
   }
 }
 .main-content .post-container {
-  border-bottom: 3px dotted grey;
+  border-bottom: 3px dotted #383D36;
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -295,10 +296,32 @@ h1.blog-title {
 }
 /******* aside#primary styles ********/
 .widget {
+  overflow: hidden;
   margin-bottom: 10px;
+}
+.widget p {
+  margin: 0 0 5px 15px;
+}
+.widget a.read-more-button {
+  float: right;
+  padding: 5px;
+}
+.widget a.read-more-button:link,
+.widget a.read-more-button:visited {
+  border: none;
+  background: #DBD9BC;
+  color: #383D36;
+}
+.widget a.read-more-button:hover,
+.widget a.read-more-button:focus {
+  background: #c5c3a9;
 }
 .widget ul {
   margin: 0;
+}
+.widget ul li {
+  list-style-type: none;
+  margin-left: 15px;
 }
 aside#primary h3 {
   padding: 10px 0 10px 10px;
@@ -358,20 +381,27 @@ aside#primary-home h3 {
 }
 footer {
   max-width: 1180px;
-  padding: 20px 0 0 120px;
+  padding: 10px 10px 0 10px;
   margin: 0 auto;
   clear: both;
-  padding: 0 10px;
   overflow: hidden;
   color: white;
 }
-/**** footer nav styles ****/
-.menu-footer-menu-container {
-  /** footer nav menu styles **/
-  /***** global typography styles ******/
-  /***** global form styles ******/
-  /*input[type=submit]       old way of doing this */
+footer li a:link,
+footer p a:link,
+footer li a:visited,
+footer p a:visited {
+  color: white;
+  text-decoration: none;
 }
+footer li a:hover,
+footer p a:hover,
+footer li a:focus,
+footer p a:focus {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+/**** footer nav styles ****/
 .menu-footer-menu-container ul {
   margin: 0;
 }
@@ -389,53 +419,45 @@ footer {
 .menu-footer-menu-container ul li:last-child:after {
   content: "";
 }
-.menu-footer-menu-container ul li a:link,
-.menu-footer-menu-container ul li a:visited {
-  color: white;
-  text-decoration: none;
+/***** .footer-left styling ****/
+@media all and (min-width: 39em) {
+  .footer-left {
+    float: left;
+  }
 }
-.menu-footer-menu-container ul li a:hover,
-.menu-footer-menu-container ul li a:focus {
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+/***** .footer-right styling ****/
+@media all and (min-width: 39em) {
+  .footer-right {
+    float: right;
+  }
 }
-.menu-footer-menu-container .menu-footer-menu-container ul li {
-  list-style-type: none;
-  display: inline;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.menu-footer-menu-container .menu-footer-menu-container ul li a:link,
-.menu-footer-menu-container .menu-footer-menu-container ul li a:visited {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1em;
-}
-.menu-footer-menu-container h1,
-.menu-footer-menu-container h2,
-.menu-footer-menu-container h3,
-.menu-footer-menu-container h4,
-.menu-footer-menu-container h5,
-.menu-footer-menu-container h6 {
+/***** global typography styles ******/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
-.menu-footer-menu-container p {
+p {
   margin-top: .5em;
 }
-.menu-footer-menu-container ul {
+ul {
   text-align: left;
   margin: .7em 0 1em 1.5em;
 }
-.menu-footer-menu-container ol {
+ol {
   text-align: left;
   margin: .7em 0 1em 1.75em;
 }
-.menu-footer-menu-container blockquote {
+blockquote {
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
-.menu-footer-menu-container blockquote:before {
+blockquote:before {
   color: #ccc;
   content: open-quote;
   font-size: 4em;
@@ -443,16 +465,24 @@ footer {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-.menu-footer-menu-container blockquote p {
+blockquote p {
   display: inline;
 }
-.menu-footer-menu-container p.em {
+p.em {
   font-weight: bold;
 }
-.menu-footer-menu-container a:link {
-  text-decoration: underline;
+.main a:link,
+.main a:visited {
+  color: #12806a;
+  text-decoration: none;
 }
-.menu-footer-menu-container input.shortfield {
+.main a:hover,
+.main a:focus {
+  border-bottom: none;
+  color: #59a697;
+}
+/***** global form styles ******/
+input.shortfield {
   -webkit-appearance: none;
   -moz-appearance: none;
   /*appearance: none;  */
@@ -466,7 +496,7 @@ footer {
   min-width: 240px;
   max-width: 340px;
 }
-.menu-footer-menu-container textarea.longfield {
+textarea.longfield {
   -webkit-appearance: none;
   -moz-appearance: none;
   /*appearance: none;  */
@@ -480,7 +510,8 @@ footer {
   min-width: 240px;
   max-width: 640px;
 }
-.menu-footer-menu-container input.submit {
+/*input[type=submit]       old way of doing this */
+input.submit {
   -webkit-appearance: none;
   -moz-appearance: none;
   /*  appearance: none;  */
@@ -490,4 +521,30 @@ footer {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ie-border-radius: 3px;
+}
+/**** search field styles ****/
+form.search-form {
+  float: right;
+}
+form.search-form span {
+  display: none;
+}
+img.search-icon {
+  padding-top: 4px;
+  width: 22px;
+  height: 22px;
+}
+input.search-field {
+  color: white;
+  background: none;
+  width: 120px;
+  height: 15px;
+  line-height: 20px;
+  border: none;
+  overflow: hidden;
+  border-bottom: 2px solid white;
+  font-family: inherit;
+}
+input.search-field-clicked {
+  border-bottom: 2px solid white;
 }
