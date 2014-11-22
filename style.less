@@ -259,6 +259,19 @@ h1.blog-title {
 
 /******* aside#primary styles ********/
 
+a.more-link {
+  float: right;
+  padding: 5px;
+  &:link, &:visited {
+    border: none;
+    background: #DBD9BC;
+    color: #383D36;
+  }
+  &:hover, &:focus {
+    background: shade(#DBD9BC, 10%);
+  }
+}
+
 .widget {
   overflow: hidden;
   margin-bottom: 10px;

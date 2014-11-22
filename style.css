@@ -295,6 +295,20 @@ h1.blog-title {
   }
 }
 /******* aside#primary styles ********/
+a.more-link {
+  float: right;
+  padding: 5px;
+}
+a.more-link:link,
+a.more-link:visited {
+  border: none;
+  background: #DBD9BC;
+  color: #383D36;
+}
+a.more-link:hover,
+a.more-link:focus {
+  background: #c5c3a9;
+}
 .widget {
   overflow: hidden;
   margin-bottom: 10px;
