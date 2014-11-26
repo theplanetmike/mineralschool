@@ -1,70 +1,70 @@
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-1 {
     width: 6.77966102%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-2 {
     width: 15.25423729%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-3 {
     width: 23.72881356%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-4 {
     width: 32.20338983%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-5 {
     width: 40.6779661%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-6 {
     width: 49.15254237%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-7 {
     width: 57.62711864%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-8 {
     width: 66.10169492%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-9 {
     width: 74.57627119%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-10 {
     width: 83.05084746%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-11 {
     width: 91.52542373%;
     padding-right: 0%;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .columns-12 {
     width: 100%;
     padding-right: 0%;
@@ -115,12 +115,12 @@ header.header-main a:link,
 header.header-main a:visited {
   color: white;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   header.header-main {
     padding: 0 10px;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   header.header-main h1 {
     float: left;
   }
@@ -129,12 +129,12 @@ header.header-main a:visited {
 .header-utility {
   font-family: 'Roboto Condensed', sans-serif;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .header-utility .loginout {
     text-align: right;
   }
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .header-utility {
     float: right;
   }
@@ -142,7 +142,7 @@ header.header-main a:visited {
 .header-utility .social-links {
   margin: 0 auto;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .header-utility .social-links {
     margin: none;
     float: right;
@@ -152,6 +152,10 @@ a.header-donate {
   float: right;
 }
 /***** nav styles *****/
+nav.main-nav {
+  max-width: 1180px;
+  margin: 0 auto;
+}
 nav.main-nav div.menu-main-menu-container {
   float: left;
   font-family: 'Roboto Condensed', sans-serif;
@@ -216,7 +220,7 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
   background: #DBD9BC;
   color: #FFF;
 }
-@media all and (max-width: 30em) {
+@media all and (max-width: 480px) {
   nav.main-nav div.menu-main-menu-container {
     position: relative;
     z-index: 1000;
@@ -322,7 +326,7 @@ h1.blog-title {
 .main-content {
   overflow: hidden;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .main-content {
     float: left;
   }
@@ -332,7 +336,7 @@ h1.blog-title {
   margin-bottom: 10px;
   overflow: hidden;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .main-content .post-container {
     margin-right: 40px;
     padding-left: 30px;
@@ -347,7 +351,7 @@ h1.blog-title {
   overflow: hidden;
   margin-bottom: 20px;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .page-container {
     padding-left: 20px;
   }
@@ -406,7 +410,7 @@ aside#primary h3 {
   background-image: url(images/header-chalkboard.jpg);
   color: white;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   aside#primary {
     float: right;
   }
@@ -423,7 +427,7 @@ div.home aside#secondary h3 {
   font-family: 'Playball', cursive;
   font-size: 2.4em;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   div.home aside#secondary {
     float: right;
   }
@@ -440,7 +444,7 @@ aside#primary-home h3 {
   background-image: url(images/header-chalkboard.jpg);
   color: white;
 }
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   aside#primary-home {
     overflow: hidden;
   }
@@ -498,13 +502,13 @@ footer p a:focus {
   content: "";
 }
 /***** .footer-left styling ****/
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .footer-left {
     float: left;
   }
 }
 /***** .footer-right styling ****/
-@media all and (min-width: 39em) {
+@media all and (min-width: 624px) {
   .footer-right {
     float: right;
   }

@@ -94,6 +94,8 @@ a.header-donate {
 
 /***** nav styles *****/
 nav.main-nav {
+  max-width: 1180px;
+  margin: 0 auto;
   div.menu-main-menu-container {
     float: left;
     font-family: 'Roboto Condensed', sans-serif;
@@ -429,20 +431,20 @@ footer {
 .menu-footer-menu-container {
   ul {
     margin: 0;
-  li {
-    margin: 0 0 20px 0;
-    float: left;
-    list-style-type: none;
-	background-image:url(images/header-chalkboard.jpg);
-    overflow: hidden;
-    &:after {
-      content: " |";
-      padding-right: 5px;
+    li {
+      margin: 0 0 20px 0;
+      float: left;
+      list-style-type: none;
+      background-image:url(images/header-chalkboard.jpg);
+      overflow: hidden;
+      &:after {
+        content: " |";
+        padding-right: 5px;
+      }
+      &:last-child:after {
+        content: "";
+      }
     }
-    &:last-child:after {
-      content: "";
-    }
-  }
   }
 }
 
