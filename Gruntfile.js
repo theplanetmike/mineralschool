@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     less: {
       dev: {
-        src: "style.less",
+        src: "styles/style.less",
         dest: "style.css"
       },
       //run grunt less:production to compress css file
@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         options: {
           compress: true
         },
-        src: "style.less",
+        src: "styles/style.less",
         dest: "style.css"
       }
     },
