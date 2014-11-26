@@ -99,7 +99,7 @@ body {
 }
 /****** header styles *****/
 .header-wrap {
-  background-image: url(images/header-chalkboard.jpg);
+  background-image: url(images/chalkboard-header-footer.jpg);
 }
 header.header-main {
   max-width: 1180px;
@@ -318,7 +318,7 @@ div.menu-main-divider-top {
 /******* blog title styles ******/
 h1.blog-title {
   padding: 5px 0 5px 20px;
-  background-image: url(images/header-chalkboard.jpg);
+  background-image: url('images/chalkboard-header-footer.jpg');
   font-size: 2.2em;
   color: white;
 }
@@ -459,7 +459,7 @@ aside#primary-home h3 {
 }
 /**************** footer styles **********/
 .footer-wrap {
-  background-image: url(images/header-chalkboard.jpg);
+  background-image: url(images/chalkboard-header-footer.jpg);
 }
 footer {
   max-width: 1180px;
