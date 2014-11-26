@@ -18,7 +18,15 @@
 
         
         <div class="header-utility">
-          <?php get_sidebar( 'header-widgets' ); ?>
+        <aside id="header-widgets">
+          <?php if ( is_active_sidebar( 'header-widgets' ) ) : ?>
+            <?php dynamic_sidebar( 'header-widgets' ); ?>
+          <?php else : ?>
+
+            <!-- We'll need to update this with default content to display if widgets don't load -->
+
+          <?php endif; ?>
+        </aside>
           <p class="loginout"><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
           <div class="social-links">
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/facebook-logo.png"alt="facebook link"/></a>

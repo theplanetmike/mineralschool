@@ -17,9 +17,25 @@
       endif;
     ?>
   </section>
-    <?php get_sidebar( 'secondary' ); ?>
+  <aside id="secondary" class="columns-4">
+    <?php if ( is_active_sidebar( 'secondary' ) ) : ?>
+      <?php dynamic_sidebar( 'secondary' ); ?>
+    <?php else : ?>
+
+      <!-- We'll need to update this with default content to display if widgets don't load -->
+
+    <?php endif; ?>
+  </aside>
   </div><!-- end .home-main-container -->
-  <?php get_sidebar( 'primary-home' ); ?>
+  <aside id="primary-home">
+    <?php if ( is_active_sidebar( 'primary-home' ) ) : ?>
+      <?php dynamic_sidebar( 'primary-home' ); ?>
+    <?php else : ?>
+
+      <!-- We'll need to update this with default content to display if widgets don't load -->
+
+    <?php endif; ?>
+  </aside>
 </div>
 
 <?php get_footer(); ?>

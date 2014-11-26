@@ -7,7 +7,15 @@
       <p>Copyright &#169; <?php the_date(' Y '); ?> <?php bloginfo('name'); ?></p>
       </div>
       <div class="footer-right">
-        <?php get_sidebar( 'footer-widgets' ); ?>
+      <aside id="footer-widgets">
+        <?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
+          <?php dynamic_sidebar( 'footer-widgets' ); ?>
+        <?php else : ?>
+
+          <!-- We'll need to update this with default content to display if widgets don't load -->
+
+        <?php endif; ?>
+      </aside>
         <div class="social-links">
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/facebook-logo.png"alt="facebook link"/></a>
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/instagram-logo.png"alt="instagram link"/></a>
