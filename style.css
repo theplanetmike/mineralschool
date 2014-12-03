@@ -156,6 +156,7 @@ nav.main-nav {
 nav.main-nav div.menu-main-menu-container {
   /* float: left; */
   font-family: 'Roboto Condensed', sans-serif;
+  text-transform: capitalize;
 }
 nav.main-nav div.menu-main-menu-container a {
   border-bottom: none;
@@ -320,6 +321,7 @@ h1.blog-title {
   background-image: url(images/header-chalkboard.jpg);
   font-size: 2.2em;
   color: white;
+  text-transform: capitalize;
 }
 /****** post styles ********/
 .main-content {
