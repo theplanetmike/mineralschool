@@ -165,6 +165,9 @@ nav.main-nav div.menu-main-menu-container ul {
   margin: 0;
   list-style: none;
 }
+nav.main-nav div.menu-main-menu-container ul > li {
+  text-transform: uppercase;
+}
 nav.main-nav div.menu-main-menu-container ul li {
   display: inline-block;
   margin: 0 -4px 0 0;
@@ -210,6 +213,7 @@ nav.main-nav div.menu-main-menu-container ul li ul li {
             color: #fff; */
   background: #fff;
   display: block;
+  text-transform: capitalize;
   margin: 0px;
 }
 nav.main-nav div.menu-main-menu-container ul li ul li:hover {
@@ -236,6 +240,7 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     /* hide all <li> items */
     color: #555;
     padding: 0;
+    text-transform: uppercase;
   }
   nav.main-nav div.menu-main-menu-container > ul > li a {
     display: block;
