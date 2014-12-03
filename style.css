@@ -107,9 +107,6 @@ header.header-main {
   margin: 0 auto;
   overflow: hidden;
   color: white;
-  /*header.header-main h1 {
-	  padding: 20px 0 0 200px;
-  }*/
 }
 header.header-main a:link,
 header.header-main a:visited {
@@ -299,14 +296,14 @@ div.menu-main-divider-top {
   margin: 0 auto;
   padding: 0 10px;
 }
-/*div.menu-main-divider-bottom{
-	background-image:url(images/nav-lines-lower.png);
-	background-repeat:repeat-x;
-	height: 10px;
-	max-width: 100%;
-  	margin: 0 auto;
-  	padding: 0 10px;
-}*/
+div.menu-main-divider-bottom {
+  background-image: url(images/nav-lines-lower.png);
+  background-repeat: repeat-x;
+  height: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 /******** .main styles **********/
 .main {
   clear: both;
@@ -318,7 +315,7 @@ div.menu-main-divider-top {
 /******* blog title styles ******/
 h1.blog-title {
   padding: 5px 0 5px 20px;
-  background-image: url('images/chalkboard-header-footer.jpg');
+  background-image: url(images/header-chalkboard.jpg);
   font-size: 2.2em;
   color: white;
 }
