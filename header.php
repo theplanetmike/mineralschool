@@ -38,15 +38,14 @@
       </header>
     </div><!-- end header.header-main -->
     <div class="nav-wrap">
-     <div class="menu-main-divider-top">
-      <nav class="main-nav">
-        <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
-        <a class="header-donate" href="shunpike.org"><img src="<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
-         <div class="menu-main-divider-bottom">
-       
-       </div> <!--closes menu-main-divider-bottom--> 
-      </nav>
-     </div><!--closes menu-main-divider-top-->
+      <div class="menu-main-divider-top">
+        <div class="menu-main-divider-bottom">
+          <nav class="main-nav">
+            <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
+            <a class="header-donate" href="shunpike.org"><img src="<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
+          </nav>
+        </div> <!--closes menu-main-divider-bottom--> 
+      </div><!--closes menu-main-divider-top-->
     </div><!-- end nav-wrap -->
     <!-- END HEADER.PHP FILE -->
     

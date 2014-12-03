@@ -154,7 +154,7 @@ nav.main-nav {
   margin: 0 auto;
 }
 nav.main-nav div.menu-main-menu-container {
-  float: left;
+  /* float: left; */
   font-family: 'Roboto Condensed', sans-serif;
 }
 nav.main-nav div.menu-main-menu-container a {
@@ -228,13 +228,14 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background: #fff 10px 11px;
+    /*background: #fff 10px 11px;*/
   }
   nav.main-nav div.menu-main-menu-container > ul > li {
     list-style-type: none;
     display: none;
     /* hide all <li> items */
     color: #555;
+    padding: 0;
   }
   nav.main-nav div.menu-main-menu-container > ul > li a {
     display: block;
@@ -291,15 +292,16 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
 div.menu-main-divider-top {
   background-image: url(images/nav-lines-upper.png);
   background-repeat: repeat-x;
-  height: 10px;
+  min-height: 10px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 div.menu-main-divider-bottom {
   background-image: url(images/nav-lines-lower.png);
   background-repeat: repeat-x;
-  height: 10px;
+  background-position: bottom;
+  min-height: 3.5em;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 10px;
