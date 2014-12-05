@@ -41,7 +41,7 @@
       <div class="menu-main-divider-top">
         <div class="menu-main-divider-bottom">
           <nav class="main-nav">
-            <a id="three-line-menu" href="#menu-main-menu" alt="Menu"><img src="images/three-line-menu-icon.png"></a>
+            <a id="three-line-menu" href="#menu-main-menu" alt="Menu"><img src="<?php bloginfo('template_url'); ?>/images/three-line-menu-icon.png"></a>
             <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
             <a class="header-donate" href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=92316" target="blank"><img src="<?php bloginfo('template_url'); ?>/images/donate-button.png" alt="Donate button"></a>
           </nav>
