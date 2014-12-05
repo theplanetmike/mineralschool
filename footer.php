@@ -22,7 +22,7 @@
             <a href="https://twitter.com/MineralSchool" target="blank"><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png"alt="twitter link"/></a>
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/linkedin.png"alt="linkedin link"/></a>
           </div>
-        
+         <p class="sponsor"<?php bloginfo('template_url'); ?>>SPONSORED BY:</p>
          <div class ="shunpike-logo">
          	<a href="http://www.shunpike.org/" target="blank"><img src ="<?php bloginfo('template_url'); ?>/images/shunpike-logo.jpg"alt="Shunpike logo"/></a>
           </div>
