@@ -68,20 +68,15 @@ header.header-main {
 /***** header widget styles ****/
 
 .header-utility {
+  float: right;
   font-family: 'Roboto Condensed', sans-serif;
   .loginout {
-    @media @tablet {
-      text-align: right;
-    }
-  }
-  @media @tablet {
-    float: right;
+    text-align: right;
   }
   .social-links {
-    margin: 0 auto;
+    display: block;
     @media @tablet {
       margin: none;
-      float: right;
     }
   }
 }
@@ -461,16 +456,25 @@ footer {
 /***** .footer-left styling ****/
 
 .footer-left {
+  float: right;
   @media @tablet {
     float: left;
+  }
+  p {
+    text-align: right;
+    @media @tablet {
+      text-align: left;
+    }
   }
 }
 
 /***** .footer-right styling ****/
 
 .footer-right {
+  float: right;
+  clear: both;
   @media @tablet {
-    float: right;
+    clear: none;
   }
 }
 
@@ -603,6 +607,10 @@ input.submit {
 
 /**** search field styles ****/
 
+.widget_search {
+  margin-bottom: 0;
+}
+
 form.search-form {
   float: right;
   span {
@@ -617,13 +625,13 @@ img.search-icon {
 input.search-field {
   color: white;
   background: none;
-  width: 120px;
+  width: 95px;
   height: 15px;
-  line-height:20px;
   border: none;
   overflow:hidden;
   border-bottom: 2px solid white;
   font-family: inherit;
+  font-size: 90%;
 }
 
 input.search-field-clicked {

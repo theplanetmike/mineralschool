@@ -124,25 +124,18 @@ header.header-main a:visited {
 }
 /***** header widget styles ****/
 .header-utility {
+  float: right;
   font-family: 'Roboto Condensed', sans-serif;
 }
-@media all and (min-width: 624px) {
-  .header-utility .loginout {
-    text-align: right;
-  }
-}
-@media all and (min-width: 624px) {
-  .header-utility {
-    float: right;
-  }
+.header-utility .loginout {
+  text-align: right;
 }
 .header-utility .social-links {
-  margin: 0 auto;
+  display: block;
 }
 @media all and (min-width: 624px) {
   .header-utility .social-links {
     margin: none;
-    float: right;
   }
 }
 a.header-donate {
@@ -509,15 +502,30 @@ footer p a:focus {
   content: "";
 }
 /***** .footer-left styling ****/
+.footer-left {
+  float: right;
+}
 @media all and (min-width: 624px) {
   .footer-left {
     float: left;
   }
 }
+.footer-left p {
+  text-align: right;
+}
+@media all and (min-width: 624px) {
+  .footer-left p {
+    text-align: left;
+  }
+}
 /***** .footer-right styling ****/
+.footer-right {
+  float: right;
+  clear: both;
+}
 @media all and (min-width: 624px) {
   .footer-right {
-    float: right;
+    clear: none;
   }
 }
 /***** global typography styles ******/
@@ -614,6 +622,9 @@ input.submit {
   -ie-border-radius: 3px;
 }
 /**** search field styles ****/
+.widget_search {
+  margin-bottom: 0;
+}
 form.search-form {
   float: right;
 }
@@ -626,13 +637,13 @@ img.search-icon {
 input.search-field {
   color: white;
   background: none;
-  width: 120px;
+  width: 95px;
   height: 15px;
-  line-height: 20px;
   border: none;
   overflow: hidden;
   border-bottom: 2px solid white;
   font-family: inherit;
+  font-size: 90%;
 }
 input.search-field-clicked {
   border-bottom: 2px solid white;

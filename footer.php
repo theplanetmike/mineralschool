@@ -3,8 +3,9 @@
     <footer>
       <div class="footer-left">
       <?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu' => 'Main Footer Menu')); ?>
-      <p><a href="javascript:;">Privacy Policy</a> <a href="javascript:;">Terms of use</a></p>
-      <p>Copyright &#169; <?php the_date(' Y '); ?> <?php bloginfo('name'); ?></p>
+          <p><a href="javascript:;">Privacy Policy</a></p>
+          <p><a href="javascript:;">Terms of use</a></p>
+          <p>Copyright &#169; <?php the_date(' Y '); ?> <?php bloginfo('name'); ?></p>
       </div>
       <div class="footer-right">
       <aside id="footer-widgets">
