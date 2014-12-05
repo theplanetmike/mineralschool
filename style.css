@@ -126,6 +126,10 @@ header.header-main a:visited {
 .header-utility {
   font-family: 'Roboto Condensed', sans-serif;
 }
+.header-utility .loginout a:link,
+.header-utility .loginout a:visited {
+  text-decoration: none;
+}
 @media all and (min-width: 624px) {
   .header-utility .loginout {
     text-align: right;
