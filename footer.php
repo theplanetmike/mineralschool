@@ -22,6 +22,10 @@
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png"alt="twitter link"/></a>
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/linkedin.png"alt="linkedin link"/></a>
           </div>
+        
+         <div class ="shunpike-logo">
+         	<a href="javascript:;"><img src ="<?php bloginfo('template_url'); ?>/images/shunpike-logo.jpg"alt="Shunpike logo"/></a>
+          </div>
       </div>
     </footer>
     </div>
