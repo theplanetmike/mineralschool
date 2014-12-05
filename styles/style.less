@@ -68,8 +68,10 @@ header.header-main {
 /***** header widget styles ****/
 
 .header-utility {
+  float: right;
   font-family: 'Roboto Condensed', sans-serif;
   .loginout {
+<<<<<<< HEAD
 	  a:link, a:visited{
 		  text-decoration:none;
 	  }
@@ -79,12 +81,12 @@ header.header-main {
   }
   @media @tablet {
     float: right;
+
   }
   .social-links {
-    margin: 0 auto;
+    display: block;
     @media @tablet {
       margin: none;
-      float: right;
     }
   }
 }
@@ -97,8 +99,17 @@ a.header-donate {
 nav.main-nav {
   max-width: 1180px;
   margin: 0 auto;
+  #three-line-menu {
+    float:left;
+    padding: 15px 20px;
+    @media @tablet {
+      display: none;
+      opacity: 0;
+      visibility: 0;
+    }
+  }
   div.menu-main-menu-container {
-    /* float: left; */
+    float: left;
     font-family: 'Roboto Condensed', sans-serif;
     a {
       border-bottom: none;
@@ -165,17 +176,20 @@ nav.main-nav {
         }
       }
     }
-    @media @mobile {
+    @media @underdesktop {
       position: relative;
       z-index:1000;
-      &>ul {
+      ul {
         width: 220px;
         padding: 5px 0;
         position: absolute;
         top: 0;
         left: 0;
+        display: none;
+        opacity: 0;
+        visibility: 0;
         /*background: #fff 10px 11px;*/
-        &>li {
+        li {
           list-style-type: none;
           display: none; /* hide all <li> items */
           color: #555;
@@ -190,7 +204,6 @@ nav.main-nav {
         li.current-menu-item {
           display: block; /* show only current <li> item */
           color: #fff;
-          font-weight:bold;
         }
         li.current-menu-item a {
           background: none;
@@ -469,16 +482,25 @@ footer {
 /***** .footer-left styling ****/
 
 .footer-left {
+  float: right;
   @media @tablet {
     float: left;
+  }
+  p {
+    text-align: right;
+    @media @tablet {
+      text-align: left;
+    }
   }
 }
 
 /***** .footer-right styling ****/
 
 .footer-right {
+  float: right;
+  clear: both;
   @media @tablet {
-    float: right;
+    clear: none;
   }
 }
 
@@ -611,6 +633,10 @@ input.submit {
 
 /**** search field styles ****/
 
+.widget_search {
+  margin-bottom: 0;
+}
+
 form.search-form {
   float: right;
   span {
@@ -625,13 +651,13 @@ img.search-icon {
 input.search-field {
   color: white;
   background: none;
-  width: 120px;
+  width: 95px;
   height: 15px;
-  line-height:20px;
   border: none;
   overflow:hidden;
   border-bottom: 2px solid white;
   font-family: inherit;
+  font-size: 90%;
 }
 
 input.search-field-clicked {
