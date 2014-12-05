@@ -487,6 +487,9 @@ footer p a:focus {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
+.shunpike-logo {
+  float: right;
+}
 /**** footer nav styles ****/
 .menu-footer-menu-container ul {
   margin: 0;
@@ -559,13 +562,15 @@ p.em {
 }
 .main a:link,
 .main a:visited {
-  color: #12806a;
+  color: #767263;
   text-decoration: none;
+  font-size: 1.1em;
+  line-height: 1.6em;
 }
 .main a:hover,
 .main a:focus {
   border-bottom: none;
-  color: #59a697;
+  color: #9f9d92;
 }
 /***** global form styles ******/
 input.shortfield {

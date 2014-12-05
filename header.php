@@ -42,7 +42,7 @@
         <div class="menu-main-divider-bottom">
           <nav class="main-nav">
             <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
-            <a class="header-donate" href="shunpike.org"><img src="<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
+            <a class="header-donate" href="shunpike.org"><img src="images/donate-button.png"<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
           </nav>
         </div> <!--closes menu-main-divider-bottom--> 
       </div><!--closes menu-main-divider-top-->

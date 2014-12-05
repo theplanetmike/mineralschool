@@ -17,14 +17,14 @@
         <?php endif; ?>
       </aside>
         <div class="social-links">
-            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/facebook-logo.png"alt="facebook link"/></a>
+            <a href="jhttps://www.facebook.com/MineralSchool"target="blank"><img src="<?php bloginfo('template_url'); ?>/images/facebook-logo.png"alt="facebook link"/></a>
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/instagram-logo.png"alt="instagram link"/></a>
-            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png"alt="twitter link"/></a>
+            <a href="https://twitter.com/MineralSchool" target="blank"><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png"alt="twitter link"/></a>
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/linkedin.png"alt="linkedin link"/></a>
           </div>
         
          <div class ="shunpike-logo">
-         	<a href="javascript:;"><img src ="<?php bloginfo('template_url'); ?>/images/shunpike-logo.jpg"alt="Shunpike logo"/></a>
+         	<a href="http://www.shunpike.org/" target="blank"><img src ="<?php bloginfo('template_url'); ?>/images/shunpike-logo.jpg"alt="Shunpike logo"/></a>
           </div>
       </div>
     </footer>
