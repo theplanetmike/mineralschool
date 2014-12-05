@@ -29,9 +29,9 @@
         </aside>
           <p class="loginout"><?php wp_loginout(); ?> | <a href="<?php echo esc_url(get_permalink(get_page_by_title('newsletter'))); ?>">Newsletter</a></p>
           <div class="social-links">
-            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/facebook-logo.png"alt="facebook link"/></a>
+            <a href="https://www.facebook.com/MineralSchool" target="blank"><img src="<?php bloginfo('template_url'); ?>/images/facebook-logo.png"alt="facebook link"/></a>
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/instagram-logo.png"alt="instagram link"/></a>
-            <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png"alt="twitter link"/></a>
+            <a href="https://twitter.com/MineralSchool" target="blank"><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png"alt="twitter link"/></a>
             <a href="javascript:;"><img src="<?php bloginfo('template_url'); ?>/images/linkedin.png"alt="linkedin link"/></a>
           </div>
         </div>
@@ -41,8 +41,9 @@
       <div class="menu-main-divider-top">
         <div class="menu-main-divider-bottom">
           <nav class="main-nav">
+            <a id="three-line-menu" href="#menu-main-menu" alt="Menu"><img src="images/three-line-menu-icon.png"></a>
             <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
-            <a class="header-donate" href="shunpike.org"><img src="images/donate-button.png"<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
+            <a class="header-donate" href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=92316" target="blank"><img src="<?php bloginfo('template_url'); ?>/images/donate-button.png" alt="Donate button"></a>
           </nav>
         </div> <!--closes menu-main-divider-bottom--> 
       </div><!--closes menu-main-divider-top-->

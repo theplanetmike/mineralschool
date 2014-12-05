@@ -480,6 +480,10 @@ footer p a:focus {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
+.sponsor {
+  font-size: .8em;
+  padding-left: 8px;
+}
 .shunpike-logo {
   float: right;
 }
