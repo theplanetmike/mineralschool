@@ -41,6 +41,7 @@
       <div class="menu-main-divider-top">
         <div class="menu-main-divider-bottom">
           <nav class="main-nav">
+            <a id="three-line-menu" href="#menu-main-menu" alt="Menu"><img src="images/three-line-menu-icon.png"></a>
             <?php wp_nav_menu( array('theme_location' => 'header-menu','menu' => 'Main Header Menu' )); ?>
             <a class="header-donate" href="shunpike.org"><img src="images/donate-button.png"<?php bloginfo('template_url'); ?>/images/donate.jpg" alt="Donate button"></a>
           </nav>
