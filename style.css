@@ -140,8 +140,6 @@ header.header-main a:visited {
   .header-utility {
     float: right;
   }
-.header-utility .loginout {
-  text-align: right;
 }
 .header-utility .social-links {
   display: block;
@@ -163,9 +161,6 @@ nav.main-nav #three-line-menu {
   float: left;
   padding: 15px 20px;
 }
-@media all and (min-width: 800px) {
-  nav.main-nav #three-line-menu {
-    display: none;
 @media all and (min-width: 624px) {
   nav.main-nav #three-line-menu {
     display: none;
