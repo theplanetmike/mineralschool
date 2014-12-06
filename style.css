@@ -127,6 +127,19 @@ header.header-main a:visited {
   float: right;
   font-family: 'Roboto Condensed', sans-serif;
 }
+.header-utility .loginout a:link,
+.header-utility .loginout a:visited {
+  text-decoration: none;
+}
+@media all and (min-width: 624px) {
+  .header-utility .loginout {
+    text-align: right;
+  }
+}
+@media all and (min-width: 624px) {
+  .header-utility {
+    float: right;
+  }
 .header-utility .loginout {
   text-align: right;
 }
@@ -153,6 +166,11 @@ nav.main-nav #three-line-menu {
 @media all and (min-width: 800px) {
   nav.main-nav #three-line-menu {
     display: none;
+@media all and (min-width: 624px) {
+  nav.main-nav #three-line-menu {
+    display: none;
+    opacity: 0;
+    visibility: 0;
   }
 }
 nav.main-nav div.menu-main-menu-container {

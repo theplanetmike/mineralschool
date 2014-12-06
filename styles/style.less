@@ -71,7 +71,17 @@ header.header-main {
   float: right;
   font-family: 'Roboto Condensed', sans-serif;
   .loginout {
-    text-align: right;
+<<<<<<< HEAD
+	  a:link, a:visited{
+		  text-decoration:none;
+	  }
+	  @media @tablet {
+      text-align: right;
+    }
+  }
+  @media @tablet {
+    float: right;
+
   }
   .social-links {
     display: block;
@@ -92,8 +102,10 @@ nav.main-nav {
   #three-line-menu {
     float:left;
     padding: 15px 20px;
-    @media @desktop {
+    @media @tablet {
       display: none;
+      opacity: 0;
+      visibility: 0;
     }
   }
   div.menu-main-menu-container {
