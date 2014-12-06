@@ -91,6 +91,7 @@ header.header-main {
 }
 
 a.header-donate {
+  padding-top: 7px;
   float: right;
 }
 
@@ -101,7 +102,7 @@ nav.main-nav {
   #three-line-menu {
     float:left;
     padding: 15px 20px;
-    @media @tablet {
+    @media @desktop {
       display: none;
       opacity: 0;
       visibility: 0;
@@ -139,7 +140,6 @@ nav.main-nav {
         &:hover {
           /* background: #555;
           color: #fff; */
-          background:  transparent;
           color: #383D36;
           ul {
             display: block;
@@ -189,8 +189,8 @@ nav.main-nav {
         visibility: 0;
         /*background: #fff 10px 11px;*/
         li {
+          background: white;
           list-style-type: none;
-          display: none; /* hide all <li> items */
           color: #555;
           padding: 0;
           text-transform: uppercase;
@@ -199,36 +199,15 @@ nav.main-nav {
             padding: 5px 5px 5px 32px;
             text-align: left;
           }
-        }
-        li.current-menu-item {
-          display: block; /* show only current <li> item */
-          color: #fff;
-        }
-        li.current-menu-item a {
-          background: none;
-        }
-        &:hover {
-          background-color: #555;
-          li.current-menu-item {
-            color: #fff;
-            background: #666 10px 7px;
-          }
-          li {
-            display: block;
-            margin: 0 0 5px;
-            a {
-             color: #fff;
-            }
-            ul {
+          //nested ul's
+          ul {
               width: 220px;
-              padding: 5px 0;
+              padding: 5px 0 5px 10px;
               position: relative;
               display: block;
               opacity: 100;
               visibility: visible;
               top: 0;
-              left: 0;
-              background: #6aa441 transparent 10px 11px;
               li {
                 display: block;
                 margin: 0 0 5px;
@@ -244,7 +223,9 @@ nav.main-nav {
                 }
               }
             }
-          }
+        }
+        li.current-menu-item a {
+          color: #383D36;
         }
       }
     }

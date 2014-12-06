@@ -150,6 +150,7 @@ header.header-main a:visited {
   }
 }
 a.header-donate {
+  padding-top: 7px;
   float: right;
 }
 /***** nav styles *****/
@@ -161,7 +162,7 @@ nav.main-nav #three-line-menu {
   float: left;
   padding: 15px 20px;
 }
-@media all and (min-width: 624px) {
+@media all and (min-width: 800px) {
   nav.main-nav #three-line-menu {
     display: none;
     opacity: 0;
@@ -202,7 +203,6 @@ nav.main-nav div.menu-main-menu-container ul li a:visited {
 nav.main-nav div.menu-main-menu-container ul li:hover {
   /* background: #555;
           color: #fff; */
-  background: transparent;
   color: #383D36;
 }
 nav.main-nav div.menu-main-menu-container ul li:hover ul {
@@ -253,9 +253,8 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     /*background: #fff 10px 11px;*/
   }
   nav.main-nav div.menu-main-menu-container ul li {
+    background: white;
     list-style-type: none;
-    display: none;
-    /* hide all <li> items */
     color: #555;
     padding: 0;
     text-transform: uppercase;
@@ -265,50 +264,29 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     padding: 5px 5px 5px 32px;
     text-align: left;
   }
-  nav.main-nav div.menu-main-menu-container ul li.current-menu-item {
-    display: block;
-    /* show only current <li> item */
-    color: #fff;
-  }
-  nav.main-nav div.menu-main-menu-container ul li.current-menu-item a {
-    background: none;
-  }
-  nav.main-nav div.menu-main-menu-container ul:hover {
-    background-color: #555;
-  }
-  nav.main-nav div.menu-main-menu-container ul:hover li.current-menu-item {
-    color: #fff;
-    background: #666 10px 7px;
-  }
-  nav.main-nav div.menu-main-menu-container ul:hover li {
-    display: block;
-    margin: 0 0 5px;
-  }
-  nav.main-nav div.menu-main-menu-container ul:hover li a {
-    color: #fff;
-  }
-  nav.main-nav div.menu-main-menu-container ul:hover li ul {
+  nav.main-nav div.menu-main-menu-container ul li ul {
     width: 220px;
-    padding: 5px 0;
+    padding: 5px 0 5px 10px;
     position: relative;
     display: block;
     opacity: 100;
     visibility: visible;
     top: 0;
-    left: 0;
-    background: #6aa441 transparent 10px 11px;
   }
-  nav.main-nav div.menu-main-menu-container ul:hover li ul li {
+  nav.main-nav div.menu-main-menu-container ul li ul li {
     display: block;
     margin: 0 0 5px;
     background: transparent;
     color: #fff;
   }
-  nav.main-nav div.menu-main-menu-container ul:hover li ul li:hover a {
+  nav.main-nav div.menu-main-menu-container ul li ul li:hover a {
     color: #ccc;
   }
-  nav.main-nav div.menu-main-menu-container ul:hover li ul li a {
+  nav.main-nav div.menu-main-menu-container ul li ul li a {
     color: #fff;
+  }
+  nav.main-nav div.menu-main-menu-container ul li.current-menu-item a {
+    color: #383D36;
   }
 }
 div.menu-main-divider-top {
