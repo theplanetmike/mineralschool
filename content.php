@@ -14,6 +14,6 @@ the_excerpt();
 ?>
   <p class="read-more"><a href="<?php esc_url( the_permalink() ); ?>">Read More</a></p>
 <?php
-endif;  
+endif;
 ?>
 </div>

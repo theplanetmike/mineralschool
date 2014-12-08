@@ -1,0 +1,2 @@
+<div class="nav-previous alignleft"><?php next_posts_link( '<< Older' ); ?></div>
+<div class="nav-next alignright"><?php previous_posts_link( 'Newer >> ' ); $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo ' Page ' . $paged . ' of ' . $wp_query->max_num_pages; ?></div>

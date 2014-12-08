@@ -654,3 +654,125 @@ input.search-field {
 input.search-field-clicked {
   border-bottom: 2px solid white;
 }
+/*  ---------------  BEGIN WORDPRESS-GENERATED SELECTORS  ---------------  */
+div.hentry {
+  margin-bottom: 20px;
+}
+.alignnone {
+  margin-bottom: 10px;
+}
+.alignleft {
+  float: left;
+  margin: 0 10px 10px 0px ;
+}
+.alignright {
+  float: right;
+  margin: 0 0px 10px 10px;
+}
+#previous_image a,
+#next_image a {
+  border-bottom: none;
+}
+.attachment-thumbnail,
+.size-thumbnail {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+#gallery-box {
+  margin-bottom: 25px;
+}
+#comments-box {
+  clear: both;
+}
+/* COMMENTS */
+#comments-head {
+  border-bottom: 1px solid #ddd;
+}
+#comments-box ol {
+  padding: 0;
+}
+#comments-box ol li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+#comments-box ul li {
+  list-style-type: none;
+}
+#comments-box cite {
+  font-weight: bold;
+  font-size: 13px;
+}
+.comment-author {
+  margin-bottom: 2px;
+}
+.comment p {
+  clear: both;
+}
+.reply {
+  font-size: 10px;
+}
+.comment-meta {
+  font-size: 10px;
+}
+#commentform p {
+  font-size: 12px;
+}
+.avatar {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+#content img.print {
+  float: right;
+  border: none;
+  clear: both;
+  margin-bottom: 20px;
+}
+#content object {
+  margin: 0 0 10px 0px ;
+}
+#content pre {
+  max-height: 300px;
+  font-size: 12px;
+  padding: 10px;
+  margin: 10px 0px;
+  overflow: auto;
+}
+.clear {
+  clear: both;
+}
+/* POST ITEMS */
+.post-box {
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.postmetadata {
+  font-size: 12px;
+  font-style: italic;
+}
+/* GALLERY ITEMS */
+.gallery {
+  margin: auto;
+}
+.gallery-item {
+  float: left;
+  margin: 5px 3px 5px 0;
+  text-align: center;
+}
+#content p.smallattachment a,
+#content dl.gallery-item a {
+  border-bottom: none;
+}
+.gallery-caption {
+  margin-left: 0;
+}
+#content p.wp-caption-text {
+  margin-top: 10px;
+  font-size: 12px;
+}
+/* search form styles */
+#searchsubmit,
+.screen-reader-text {
+  display: none;
+}
+/*  ---------------  END WORDPRESS-GENERATED SELECTORS  ---------------  */
