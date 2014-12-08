@@ -8,8 +8,9 @@ endif; ?>
     <p>Posted <?php the_date(); ?> - <?php the_time('g:i a'); ?> by <?php the_author_posts_link(); ?> | Category: <?php the_category(', '); ?></p>
   </div>
 <?php if (is_single() ) :
-  the_content();
-else:
+  the_content(); ?>
+  <p><?php edit_post_link('Edit this post >>'); ?></p>
+<?php else:
 the_excerpt();
 ?>
   <p class="read-more"><a href="<?php esc_url( the_permalink() ); ?>">Read More</a></p>

@@ -334,6 +334,7 @@ h1.blog-title {
   border-bottom: 3px dotted #383D36;
   margin-bottom: 10px;
   overflow: hidden;
+  padding-bottom: 5px;
 }
 @media all and (min-width: 624px) {
   .main-content .post-container {
@@ -344,6 +345,9 @@ h1.blog-title {
 .main-content .post-container p.read-more {
   float: right;
   margin-bottom: 10px;
+}
+a.post-edit-link {
+  padding-top: 10px;
 }
 /***** page-specific post styles *****/
 .page-container {
@@ -614,6 +618,12 @@ textarea.longfield {
   width: 50%;
   min-width: 240px;
   max-width: 640px;
+}
+textarea#comment {
+  display: block;
+}
+form.comment-form {
+  margin-bottom: 10px;
 }
 /*input[type=submit]       old way of doing this */
 input.submit {
