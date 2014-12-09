@@ -258,6 +258,7 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     color: #555;
     padding: 0;
     text-transform: uppercase;
+    width: 104.5%;
   }
   nav.main-nav div.menu-main-menu-container ul li a {
     display: block;
