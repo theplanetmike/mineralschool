@@ -259,6 +259,7 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     padding: 0;
     text-transform: uppercase;
     width: 104.5%;
+    overflow: hidden;
   }
   nav.main-nav div.menu-main-menu-container ul li a {
     display: block;
@@ -267,7 +268,7 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
   }
   nav.main-nav div.menu-main-menu-container ul li ul {
     width: 220px;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 5px 0;
     position: relative;
     display: block;
     opacity: 100;
@@ -279,9 +280,10 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     margin: 0 0 5px;
     background: transparent;
     color: #fff;
+    padding-left: 10px;
   }
   nav.main-nav div.menu-main-menu-container ul li ul li:hover a {
-    color: #ccc;
+    /* color: #ccc; */
   }
   nav.main-nav div.menu-main-menu-container ul li ul li a {
     color: #fff;

@@ -195,6 +195,7 @@ nav.main-nav {
           padding: 0;
           text-transform: uppercase;
           width: 104.5%;
+          overflow: hidden;
           a {
             display: block;
             padding: 5px 5px 5px 32px;
@@ -203,7 +204,7 @@ nav.main-nav {
           //nested ul's
           ul {
               width: 220px;
-              padding: 5px 0 5px 10px;
+              padding: 5px 0 5px 0;
               position: relative;
               display: block;
               opacity: 100;
@@ -214,9 +215,10 @@ nav.main-nav {
                 margin: 0 0 5px;
                 background: transparent;
                 color: #fff;
+                padding-left: 10px;
                 &:hover {
                   a {
-                    color: #ccc;
+                    /* color: #ccc; */
                   }
                 }
                 a {
