@@ -200,6 +200,10 @@ nav.main-nav div.menu-main-menu-container ul li a:visited {
   color: #383D36;
   font-size: 1.25em;
 }
+nav.main-nav div.menu-main-menu-container ul li a:link:hover,
+nav.main-nav div.menu-main-menu-container ul li a:visited:hover {
+  text-decoration: underline;
+}
 nav.main-nav div.menu-main-menu-container ul li:hover {
   /* background: #555;
           color: #fff; */
@@ -283,7 +287,7 @@ nav.main-nav div.menu-main-menu-container ul li ul li:hover {
     padding-left: 10px;
   }
   nav.main-nav div.menu-main-menu-container ul li ul li:hover a {
-    /* color: #ccc; */
+    text-decoration: none;
   }
   nav.main-nav div.menu-main-menu-container ul li ul li a {
     color: #fff;
